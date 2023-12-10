@@ -23,7 +23,7 @@ const Featured = () => {
           <div className={styles.img}>
             <Image
               className={styles.featured1}
-              src="/img/heroimg.png"
+              src="/img/featured.png"
               alt=""
               width="550"
               height="380"

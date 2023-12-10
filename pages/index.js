@@ -20,7 +20,6 @@ export default function Home({ pizzaList, admin }) {
       </Head>
       <Featured />
       <MySwiper />
-      <Contact />
       {admin && <AddButton setClose={setClose} />}
       <PizzaList pizzaList={pizzaList} />
       {!close && <Add setClose={setClose} />}

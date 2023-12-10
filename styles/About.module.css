@@ -2,12 +2,18 @@
   height: 100vh;
   width: 100%;
   margin-top: 100px;
-  background-color: white;
+  background-color: #f0efef;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .container .main .img {
   width: 580px;
   max-width: 100%;
@@ -77,6 +83,18 @@
 .btn .button2 {
   background-color: #111111;
   color: white;
+}
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.flip {
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 1250px) {
