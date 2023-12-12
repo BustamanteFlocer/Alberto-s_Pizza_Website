@@ -7,7 +7,8 @@ import PizzaList from "../components/PizzaList";
 import { useState } from "react";
 import Add from "@/components/Add";
 import AddButton from "@/components/AddButton";
-import Contact from "./Contact";
+import Clients from "@/components/Clients";
+import ContactUs from "@/components/ContactUs";
 
 export default function Home({ pizzaList, admin }) {
   const [close, setClose] = useState(true);
@@ -23,6 +24,8 @@ export default function Home({ pizzaList, admin }) {
       {admin && <AddButton setClose={setClose} />}
       <PizzaList pizzaList={pizzaList} />
       {!close && <Add setClose={setClose} />}
+      <Clients />
+      <ContactUs />
     </div>
   );
 }
