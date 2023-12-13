@@ -24,6 +24,7 @@
 
 .title {
   font-weight: 300;
+  margin-bottom: 20px;
 }
 
 .item {
@@ -39,12 +40,23 @@
 
 .input {
   height: 40px;
+  color: black;
+  padding: 10px;
+  background-color: white;
+}
+
+.textarea {
+  color: black;
+  height: 40px;
+  padding: 10px;
+  background-color: white;
 }
 
 .button {
   border: none;
-  background-color: teal;
+  background-color: #d1411e;
   color: white;
+  width: 100%;
   padding: 10px 20px;
   font-weight: 500;
   font-size: 16px;

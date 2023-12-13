@@ -47,7 +47,7 @@ const Product = ({ pizza }) => {
       </div>
       <div className={styles.right}>
         <h1 className={styles.title}>{pizza.title}</h1>
-        <span className={styles.price}>${price}</span>
+        <span className={styles.price}>₱{price}</span>
         <p className={styles.desc}>{pizza.desc}</p>
         <h3 className={styles.choose}>Choose the size</h3>
         <div className={styles.sizes}>
@@ -69,10 +69,10 @@ const Product = ({ pizza }) => {
           {pizza.extraOptions.map((option) => (
             <div className={styles.option} key={option._id}>
               <input
+                className={styles.checkbox}
                 type="checkbox"
                 id={option.text}
                 name={option.text}
-                className={styles.checkbox}
                 onChange={(e) => handleChange(e, option)}
               />
               <label htmlFor="double">{option.text}</label>
@@ -81,10 +81,10 @@ const Product = ({ pizza }) => {
         </div>
         <div className={styles.add}>
           <input
+            className={styles.quantity}
             onChange={(e) => setQuantity(e.target.value)}
             type="number"
             defaultValue={1}
-            className={styles.quantity}
           />
           <button className={styles.button} onClick={handleClick}>
             Add to Cart

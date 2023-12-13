@@ -9,6 +9,7 @@ import Add from "@/components/Add";
 import AddButton from "@/components/AddButton";
 import Clients from "@/components/Clients";
 import ContactUs from "@/components/ContactUs";
+import OurStory from "@/components/OurStory";
 
 export default function Home({ pizzaList, admin }) {
   const [close, setClose] = useState(true);
@@ -20,6 +21,7 @@ export default function Home({ pizzaList, admin }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Featured />
+      <OurStory />
       <MySwiper />
       {admin && <AddButton setClose={setClose} />}
       <PizzaList pizzaList={pizzaList} />

@@ -17,7 +17,7 @@ const Cart = () => {
   const style = { layout: "vertical" };
   const amount = cart.total;
   const [cash, setCash] = useState(false);
-  const currency = "USD";
+  const currency = "PHP";
   const [open, setOpen] = useState(false);
   const dispatch = useDispatch();
   const router = useRouter();
@@ -34,10 +34,7 @@ const Cart = () => {
     }
   };
 
-  // Custom component to wrap the PayPalButtons and handle currency changes
   const ButtonWrapper = ({ currency, showSpinner }) => {
-    // usePayPalScriptReducer can be use only inside children of PayPalScriptProviders
-    // This is the main reason to wrap the PayPalButtons in a new component
     const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
 
     useEffect(() => {
@@ -71,7 +68,6 @@ const Cart = () => {
                 ],
               })
               .then((orderId) => {
-                // Your code here after create the order
                 return orderId;
               });
           }}
@@ -149,13 +145,13 @@ const Cart = () => {
         <div className={styles.wrapper}>
           <h2 className={styles.title}> CART TOTAL</h2>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Subtotal</b>${cart.total}
+            <b className={styles.totalTextTitle}>Subtotal: </b>${cart.total}
           </div>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Discount</b>$0.00
+            <b className={styles.totalTextTitle}>Discount: </b>$0.00
           </div>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Total</b>${cart.total}
+            <b className={styles.totalTextTitle}>Total: </b>${cart.total}
           </div>
           {open ? (
             <div className={styles.paymentMethods}>

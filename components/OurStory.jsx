@@ -1,8 +1,7 @@
 import Image from "next/image";
-import styles from "../styles/About.module.css";
-import Clients from "@/components/Clients";
+import styles from "../styles/OurStory.module.css";
 
-const About = () => {
+const OurStory = () => {
   return (
     <div>
       <div className={styles.container}>
@@ -15,7 +14,7 @@ const About = () => {
             height={80}
           />
           <div className={styles.allText}>
-            <h4>About Us</h4>
+            <h4>OurStory Us</h4>
             <h1>A House of Creative & Intelligent</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
@@ -38,9 +37,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Clients />
     </div>
   );
 };
 
-export default About;
+export default OurStory;
