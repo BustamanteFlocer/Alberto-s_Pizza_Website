@@ -10,6 +10,8 @@ import AddButton from "@/components/AddButton";
 import Clients from "@/components/Clients";
 import ContactUs from "@/components/ContactUs";
 import OurStory from "@/components/OurStory";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function Home({ pizzaList, admin }) {
   const [close, setClose] = useState(true);
@@ -20,6 +22,7 @@ export default function Home({ pizzaList, admin }) {
         <meta name="description" content="Best pizza in town" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar />
       <Featured />
       <OurStory />
       <MySwiper />
@@ -28,6 +31,7 @@ export default function Home({ pizzaList, admin }) {
       {!close && <Add setClose={setClose} />}
       <Clients />
       <ContactUs />
+      <Footer />
     </div>
   );
 }

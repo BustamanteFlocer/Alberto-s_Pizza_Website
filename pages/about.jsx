@@ -1,10 +1,13 @@
 import Image from "next/image";
 import styles from "../styles/About.module.css";
 import Clients from "@/components/Clients";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const About = () => {
   return (
     <div>
+      <Navbar />
       <div className={styles.container}>
         <div className={styles.main}>
           <Image
@@ -39,6 +42,7 @@ const About = () => {
         </div>
       </div>
       <Clients />
+      <Footer />
     </div>
   );
 };
