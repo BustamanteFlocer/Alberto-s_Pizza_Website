@@ -84,6 +84,7 @@ const Index = ({ orders, products }) => {
             ))}
           </table>
         </div>
+
         <div className={styles.item}>
           <h1 className={styles.title}>Orders</h1>
           <table className={styles.table}>

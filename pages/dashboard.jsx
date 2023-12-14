@@ -1,147 +1,91 @@
+import axios from "axios";
 import Image from "next/image";
+import { useState } from "react";
 import styles from "../styles/Dashboard.module.css";
-import { LiaTwitter } from "react-icons/lia";
+import NavAdmin from "./NavAdmin";
 
-const Dashboard = () => {
+const Dashboard = ({ products }) => {
+  const [pizzaList, setPizzaList] = useState(products);
+
+  const handleDelete = async (id) => {
+    console.log(id);
+    try {
+      const res = await axios.delete(
+        "http://localhost:3000/api/products/" + id
+      );
+      setPizzaList(pizzaList.filter((pizza) => pizza._id !== id));
+    } catch (err) {
+      console.log(err);
+    }
+  };
   return (
     <div className={styles.container}>
-      <nav className={styles.nav}>
-        <ul>
-          <li>
-            <div className={`${styles.logo} `}>
-              <Image
-                className={styles.img}
-                src="/img/featured1.png"
-                alt=""
-                height="45"
-                width="45"
-              />
-              <span className={styles.navItem}>Admin</span>
-            </div>
-          </li>
+      <NavAdmin />
 
-          <li>
-            <div className={styles.a}>
-              <LiaTwitter className={styles.icons} />
-              <span className={styles.navItem}>Menu</span>
-            </div>
-          </li>
-          <li>
-            <div className={styles.a}>
-              <LiaTwitter className={styles.icons} />
-              <span className={styles.navItem}>Orders</span>
-            </div>
-          </li>
-          <li>
-            <div className={styles.a}>
-              <LiaTwitter className={styles.icons} />
-              <span className={styles.navItem}>Add Menu</span>
-            </div>
-          </li>
-
-          <li>
-            <div className={`${styles.logout}`}>
-              <LiaTwitter className={styles.icons} />
-              <span className={styles.navItem}>Log out</span>
-            </div>
-          </li>
-        </ul>
-      </nav>
-
-      <section className={styles.main}>
-        <div className={styles.mainTop}>
-          <h1>Attendance</h1>
-        </div>
-
-        <section className={styles.attendance}>
-          <div className={styles.attendanceList}>
-            <h1>Attendance List</h1>
-            <table className={styles.table}>
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Depart</th>
-                  <th>Date</th>
-                  <th>Join Time</th>
-                  <th>Logout Time</th>
-                  <th>Details</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>01</td>
-                  <td>Sam David</td>
-                  <td>Design</td>
-                  <td>03-24-22</td>
-                  <td>8:00AM</td>
-                  <td>3:00PM</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-                <tr className={styles.active}>
-                  <td>02</td>
-                  <td>Balbina Kherr</td>
-                  <td>Coding</td>
-                  <td>03-24-22</td>
-                  <td>9:00AM</td>
-                  <td>4:00PM</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>03</td>
-                  <td>Badan John</td>
-                  <td>testing</td>
-                  <td>03-24-22</td>
-                  <td>8:00AM</td>
-                  <td>3:00PM</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>04</td>
-                  <td>Sara David</td>
-                  <td>Design</td>
-                  <td>03-24-22</td>
-                  <td>8:00AM</td>
-                  <td>3:00PM</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>05</td>
-                  <td>Salina</td>
-                  <td>Coding</td>
-                  <td>03-24-22</td>
-                  <td>9:00AM</td>
-                  <td>4:00PM</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>06</td>
-                  <td>Tara Smith</td>
-                  <td>Testing</td>
-                  <td>03-24-22</td>
-                  <td>9:00AM</td>
-                  <td>4:00PM</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-      </section>
+      <div className={styles.item}>
+        <h1 className={styles.title}>Products</h1>
+        <table className={styles.table}>
+          <tbody>
+            <tr className={styles.trTitle}>
+              <th>Image</th>
+              <th>Id</th>
+              <th>Title</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </tbody>
+          {pizzaList.map((product) => (
+            <tbody key={product._id}>
+              <tr className={styles.trTitle}>
+                <td>
+                  <Image
+                    src={product.img}
+                    width={50}
+                    height={50}
+                    objectFit="cover"
+                    alt=""
+                  />
+                </td>
+                <td>{product._id.slice(0, 5)}...</td>
+                <td>{product.title}</td>
+                <td>${product.prices[0]}</td>
+                <td>
+                  <button className={styles.button}>Edit</button>
+                  <button
+                    className={styles.button}
+                    onClick={() => handleDelete(product._id)}
+                  >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          ))}
+        </table>
+      </div>
     </div>
   );
+};
+
+export const getServerSideProps = async (ctx) => {
+  const myCookie = ctx.req?.cookies || "";
+
+  if (myCookie.token !== process.env.TOKEN) {
+    return {
+      redirect: {
+        destination: "/admin/login",
+        permanent: false,
+      },
+    };
+  }
+
+  const productRes = await axios.get("http://localhost:3000/api/products");
+
+  return {
+    props: {
+      products: productRes.data,
+    },
+  };
 };
 
 export default Dashboard;
