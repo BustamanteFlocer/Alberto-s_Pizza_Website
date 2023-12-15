@@ -24,22 +24,38 @@ const Login = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <h1>Admin Dashboard</h1>
-        <input
-          placeholder="username"
-          className={styles.input}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <input
-          placeholder="password"
-          type="password"
-          className={styles.input}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button onClick={handleClick} className={styles.button}>
-          Sign In
-        </button>
-        {error && <span className={styles.error}>Wrong Credentials!</span>}
+        <div className={`${styles.formContainer} ${styles.signIn}`}>
+          <div className={styles.form}>
+            <h1>Admin Dashboard</h1>
+            <input
+              placeholder="username"
+              className={styles.input}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <input
+              placeholder="password"
+              type="password"
+              className={styles.input}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button onClick={handleClick} className={styles.button}>
+              Sign In
+            </button>
+
+            {error && <span className={styles.error}>Wrong Credentials!</span>}
+          </div>
+        </div>
+        <div className={styles.toggleContainer}>
+          <div className={styles.toggle}>
+            <div className={`${styles.togglePanel} ${styles.toggleRight}`}>
+              <h1>Unlock Admin Dashboard</h1>
+              <p>
+                Register with your personal details to gain access to the admin
+                page.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

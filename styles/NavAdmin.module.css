@@ -1,53 +1,63 @@
 .container {
   display: flex;
-  color: black;
-  background: rgb(226, 226, 226);
+  color: white;
 }
 
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0;
-  bottom: 0;
-  height: 100vh;
+  height: 100%;
   left: 0;
-  width: 90px;
-  background: #fff;
+  width: 180px;
+
+  background-color: #1a1a1a;
   overflow: hidden;
   transition: 1s;
-}
-.nav:hover {
-  width: 280px;
-  transition: 1s;
+  z-index: 1000; /* Add z-index to ensure it appears above other elements */
 }
 
 .logo {
   text-align: center;
   display: flex;
-  margin: 20px 0 0 20px;
+  margin: 30px 0 0 20px;
   padding-bottom: 3rem;
   cursor: pointer;
 }
 
 .logo .img {
   width: 45px;
+  margin-top: -5px;
   height: 45px;
   border-radius: 50%;
 }
 .logo span {
-  font-weight: bold;
+  font-weight: bolder;
   padding-left: 15px;
+  color: rgb(232, 229, 229);
   font-size: 18px;
   text-transform: uppercase;
 }
-.nav .a,
+
+.menu,
 .logout {
   position: relative;
   cursor: pointer;
   width: 280px;
+  height: 90px;
+  flex-basis: content;
   font-size: 14px;
-  color: rgb(85, 83, 83);
+  color: rgb(232, 229, 229);
   display: table;
   padding: 10px;
+}
+
+.menu:hover {
+  background: #464545;
+  color: orangered;
+}
+.logout:hover {
+  background: #464545;
+  color: orangered;
 }
 .icons {
   position: relative;
@@ -60,18 +70,17 @@
 .navItem {
   position: relative;
   top: 5px;
+  font-weight: bold;
   font-size: 15px;
-  color: black;
+  color: white;
   margin-left: 10px;
 }
 
 .nav .a:hover .icons,
 .logout:hover {
-  color: #34af6d;
   transition: 0.5s;
 }
 .logout {
   position: absolute;
   bottom: 0;
-  margin-bottom: 20px;
 }

@@ -4,7 +4,7 @@ const AddButton = ({ setClose }) => {
   return (
     <div className={styles.wrap}>
       <div onClick={() => setClose(false)} className={styles.mainAddButton}>
-        Add New Pizza
+        Add to Menu
       </div>
     </div>
   );

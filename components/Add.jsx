@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "../styles/Add.module.css";
 import axios from "axios";
+import { useRouter } from "next/router";
 
 const Add = ({ setClose }) => {
   const [file, setFile] = useState(null);
@@ -26,6 +27,7 @@ const Add = ({ setClose }) => {
 
   const handleCreate = async () => {
     const data = new FormData();
+
     data.append("file", file);
     data.append("upload_preset", "uploads");
     try {
@@ -44,7 +46,6 @@ const Add = ({ setClose }) => {
       };
 
       await axios.post("http://localhost:3000/api/products", newProduct);
-
       setClose(true);
     } catch (err) {
       console.log(err);
@@ -54,10 +55,7 @@ const Add = ({ setClose }) => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <span onClick={() => setClose(true)} className={styles.close}>
-          X
-        </span>
-        <h1>Add a new Pizza</h1>
+        <h1>Add New Dish into Menu</h1>
         <div className={styles.item}>
           <label className={styles.label}>Choose an image</label>
           <input type="file" onChange={(e) => setFile(e.target.files[0])} />
@@ -131,9 +129,18 @@ const Add = ({ setClose }) => {
             ))}
           </div>
         </div>
-        <button className={styles.addButton} onClick={handleCreate}>
-          Create
-        </button>
+
+        <div className={styles.buttons}>
+          <button
+            className={styles.cancelButton}
+            onClick={() => setClose(true)}
+          >
+            Cancel
+          </button>
+          <button className={styles.orderButton} onClick={handleCreate}>
+            Create
+          </button>
+        </div>
       </div>
     </div>
   );

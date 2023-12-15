@@ -1,17 +1,23 @@
 import styles from "../styles/OrderDetail.module.css";
 import { useEffect, useState } from "react";
 
-const OrderDetail = ({ total, createOrder }) => {
+const OrderDetail = ({ total, createOrder, setShowOrderDetail }) => {
   const [customer, setCustomer] = useState("");
   const [address, setAddress] = useState("");
 
   const handleClick = () => {
     createOrder({ customer, address, total, method: 0 });
   };
+
+  const handleClose = () => {
+    setShowOrderDetail(false);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <h1 className={styles.title}>You will pay $12 after delivery</h1>
+
         <div className={styles.item}>
           <label className={styles.label}>Full Name</label>
           <input
@@ -39,9 +45,14 @@ const OrderDetail = ({ total, createOrder }) => {
             onChange={(e) => setAddress(e.target.value)}
           />
         </div>
-        <button className={styles.button} onClick={handleClick}>
-          Order
-        </button>
+        <div className={styles.buttons}>
+          <button className={styles.cancelButton} onClick={handleClose}>
+            Cancel
+          </button>
+          <button className={styles.orderButton} onClick={handleClick}>
+            Order
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -13,8 +13,10 @@ import axios from "axios";
 import OrderDetail from "@/components/OrderDetail";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import DeliveryButton from "@/components/DeliveryButton";
 
 const Cart = () => {
+  const [showOrderDetail, setShowOrderDetail] = useState(false);
   const cart = useSelector((state) => state.cart);
   const style = { layout: "vertical" };
   const amount = cart.total;
@@ -161,7 +163,9 @@ const Cart = () => {
               <div className={styles.paymentMethods}>
                 <button
                   className={styles.payButton}
-                  onClick={() => setCash(true)}
+                  onClick={() => {
+                    setShowOrderDetail(true);
+                  }}
                 >
                   CASH ON DELIVERY
                 </button>
@@ -185,7 +189,13 @@ const Cart = () => {
             )}
           </div>
         </div>
-        {cash && <OrderDetail total={cart.total} createOrder={createOrder} />}
+        {showOrderDetail && (
+          <OrderDetail
+            total={cart.total}
+            createOrder={createOrder}
+            setShowOrderDetail={setShowOrderDetail}
+          />
+        )}
       </div>
       <Footer />
     </div>
