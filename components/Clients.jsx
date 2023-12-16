@@ -17,14 +17,7 @@ let clients = [
     disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
   },
-  {
-    name: "John Michel",
-    position: "web developer",
-    img: "/img/tranding-food-1.png",
-    stars: 4,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
-  },
+
   {
     name: "John Michel",
     position: "web developer",

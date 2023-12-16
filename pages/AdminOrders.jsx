@@ -25,6 +25,16 @@ const AdminOrders = ({ orders }) => {
     }
   };
 
+  const handleOrderDelete = async (id) => {
+    console.log(id);
+    try {
+      const res = await axios.delete("http://localhost:3000/api/orders/" + id);
+      setOrderList(orderList.filter((order) => order._id !== id));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <div className={styles.container}>
       <NavAdmin />
@@ -59,8 +69,17 @@ const AdminOrders = ({ orders }) => {
                     </td>
                     <td>{status[order.status]}</td>
                     <td>
-                      <button onClick={() => handleStatus(order._id)}>
+                      <button
+                        className={styles.nextButton}
+                        onClick={() => handleStatus(order._id)}
+                      >
                         Next Stage
+                      </button>
+                      <button
+                        className={styles.deleteButton}
+                        onClick={() => handleOrderDelete(order._id)}
+                      >
+                        Delete
                       </button>
                     </td>
                   </tr>

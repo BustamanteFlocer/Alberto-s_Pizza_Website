@@ -2,7 +2,8 @@
   display: flex;
   color: black;
   margin-left: 180px;
-  background: rgb(226, 226, 226);
+  background: url("/img/adminbg.jpg");
+  background-size: cover;
 }
 /* MAin Section */
 .main {
@@ -12,7 +13,6 @@
 }
 .mainTop {
   display: flex;
-  color: #34af6d;
   margin-top: 20px;
   margin-bottom: 40px;
   margin-left: 10px;
@@ -20,7 +20,7 @@
 }
 .title {
   text-align: center;
-  margin-top: 20px;
+
   font-size: x-large;
 }
 /*Menu List section  */
@@ -30,9 +30,9 @@
 }
 .ordersList {
   width: 100%;
-  padding: 10px;
-  margin-top: 10px;
+  padding: 20px;
   background: #fff;
+  margin-top: -20px;
   border-radius: 10px;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
@@ -46,7 +46,7 @@
 }
 .table thead tr {
   color: #fff;
-  background: #34af6d;
+  background: #d1411e;
   text-align: center;
   font-weight: bold;
 }
@@ -62,17 +62,34 @@
   background: #f3f3f3;
 }
 
-.table button {
+.deleteButton {
   padding: 6px 20px;
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 110px;
+  cursor: pointer;
+  color: white;
+  background: #e02d3c;
+  border: 1px solid #f76c6c;
+}
+.nextButton {
+  padding: 6px 20px;
+  margin-left: 10px;
   border-radius: 10px;
   cursor: pointer;
-  color: black;
-
-  background: transparent;
-  border: 1px solid #4ad489;
+  color: white;
+  background: #3a8dec;
+  border: 1px solid rgb(0, 221, 255);
 }
-.table button:hover {
-  background: #4ad489;
+
+.nextButton:hover {
+  background: #1874dc;
+  color: #fff;
+  transition: 0.5rem;
+}
+
+.deleteButton:hover {
+  background: #cb1424;
   color: #fff;
   transition: 0.5rem;
 }

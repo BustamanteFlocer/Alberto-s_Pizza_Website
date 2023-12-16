@@ -1,6 +1,9 @@
 import Image from "next/image";
 import styles from "../styles/NavAdmin.module.css";
 import { LiaTwitter } from "react-icons/lia";
+import { TiShoppingCart } from "react-icons/ti";
+import { BiLogOut } from "react-icons/bi";
+import { MdRestaurantMenu } from "react-icons/md";
 import Link from "next/link";
 
 const NavAdmin = () => {
@@ -9,7 +12,7 @@ const NavAdmin = () => {
       <nav className={styles.nav}>
         <ul>
           <li>
-            <div className={`${styles.logo} `}>
+            <div className={styles.logo}>
               <Image
                 className={styles.img}
                 src="/img/featured1.png"
@@ -24,7 +27,7 @@ const NavAdmin = () => {
           <Link href="/dashboard" passHref>
             <li>
               <div className={styles.menu}>
-                <LiaTwitter className={styles.icons} />
+                <MdRestaurantMenu className={styles.icons} />
                 <span className={styles.navItem}>Menu</span>
               </div>
             </li>
@@ -32,7 +35,7 @@ const NavAdmin = () => {
           <Link href="/AdminOrders" passHref>
             <li>
               <div className={styles.menu}>
-                <LiaTwitter className={styles.icons} />
+                <TiShoppingCart className={styles.icons} />
                 <span className={styles.navItem}>Orders</span>
               </div>
             </li>
@@ -41,7 +44,7 @@ const NavAdmin = () => {
           <Link href="/admin/login" passHref>
             <li>
               <div className={styles.logout}>
-                <LiaTwitter className={styles.icons} />
+                <BiLogOut className={styles.icons} />
                 <span className={styles.navItem}>Log out</span>
               </div>
             </li>

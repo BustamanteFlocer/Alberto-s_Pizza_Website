@@ -33,6 +33,7 @@ const Contact = () => {
   return (
     <div className={styles.contain}>
       <Navbar />
+
       <div className={styles.body}>
         <div className={styles.container}>
           <div className={styles.left}>

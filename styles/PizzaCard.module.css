@@ -9,8 +9,8 @@
   justify-content: center;
   text-align: center;
   padding: 20px 40px;
+
   letter-spacing: 1px;
-  cursor: pointer;
 }
 @media (max-width: 840px) {
   .container {
@@ -45,7 +45,7 @@
   flex-basis: 120px;
   color: #151414;
 }
-
+/*
 .container .button {
   background-color: #d1411e;
   margin: 10px;
@@ -59,7 +59,7 @@
   border: none;
   color: white;
   cursor: pointer;
-}
+}*/
 
 @media screen and (max-width: 480px) {
   .container {
@@ -74,4 +74,13 @@
   .desc {
     font-size: 24px;
   }
+}
+
+.img {
+  cursor: pointer;
+}
+
+.img:hover {
+  border-radius: 80%;
+  box-shadow: 0 0 10px rgba(245, 100, 4, 0.667);
 }

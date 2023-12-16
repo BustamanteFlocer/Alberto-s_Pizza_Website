@@ -2,7 +2,9 @@
   display: flex;
   color: black;
   margin-left: 180px;
-  background: rgb(226, 226, 226);
+  background: url("/img/adminbg.jpg");
+  background-size: contain;
+  /*background: rgb(226, 226, 226);*/
 }
 /* MAin Section */
 .main {
@@ -13,7 +15,6 @@
 
 .title {
   text-align: center;
-  margin-top: 20px;
   font-size: x-large;
 }
 
@@ -24,9 +25,9 @@
 }
 .menuList {
   width: 100%;
-  padding: 10px;
-  margin-top: 10px;
+  padding: 20px;
   background: #fff;
+  margin-top: -20px;
   border-radius: 10px;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
@@ -40,7 +41,7 @@
 }
 .table thead tr {
   color: #fff;
-  background: #34af6d;
+  background: #d1411e;
   text-align: center;
   font-weight: bold;
 }
@@ -64,11 +65,6 @@
   background: transparent;
   border: 1px solid #4ad489;
 }
-.table button:hover {
-  background: #4ad489;
-  color: #fff;
-  transition: 0.5rem;
-}
 
 .button {
   border: none;
@@ -78,10 +74,33 @@
 }
 
 .button:first-child {
-  background-color: teal;
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 110px;
+  color: white;
+  background: #3a8dec;
+  border: 1px solid rgb(0, 221, 255);
   margin-right: 10px;
+}
+.button:first-child:hover {
+  background: #1874dc;
+  color: #fff;
+  transition: 0.5rem;
 }
 
 .button:last-child {
-  background-color: crimson;
+  padding: 6px 20px;
+  border-radius: 10px;
+  width: 110px;
+  cursor: pointer;
+  color: white;
+  background: #e02d3c;
+  border: 1px solid #f76c6c;
+}
+
+.button:last-child:hover {
+  background: #cb1424;
+  color: #fff;
+  transition: 0.5rem;
 }

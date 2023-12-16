@@ -3,6 +3,7 @@
   background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
   padding: 1.5rem 1rem;
   margin: 0 1rem;
+  border-radius: 20px;
 }
 
 .header {
