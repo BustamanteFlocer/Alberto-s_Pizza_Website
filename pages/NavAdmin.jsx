@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "../styles/NavAdmin.module.css";
-import { LiaTwitter } from "react-icons/lia";
 import { TiShoppingCart } from "react-icons/ti";
 import { BiLogOut } from "react-icons/bi";
 import { MdRestaurantMenu } from "react-icons/md";

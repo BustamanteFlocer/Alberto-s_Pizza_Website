@@ -15,6 +15,9 @@ const Order = ({ order }) => {
   return (
     <div className={styles.contain}>
       <Navbar />
+      <div className={` ${styles.pageHeader}`}>
+        <h1>Your Order</h1>
+      </div>
       <div className={styles.container}>
         <div className={styles.left}>
           <div className={styles.row}>

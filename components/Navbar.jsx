@@ -26,7 +26,7 @@ const Navbar = () => {
 
       <ul className={styles.list}>
         <Link href="/" passHref>
-          <li className={styles.listItem}>Homepage</li>
+          <li className={styles.listItem}>Home</li>
         </Link>
         <Link href="/about" passHref>
           <li className={styles.listItem}>Menu</li>

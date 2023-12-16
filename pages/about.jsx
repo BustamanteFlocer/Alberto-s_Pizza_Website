@@ -8,6 +8,10 @@ const About = () => {
   return (
     <div>
       <Navbar />
+      <div className={` ${styles.pageHeader}`}>
+        <h1>About</h1>
+      </div>
+
       <div className={styles.container}>
         <div className={styles.main}>
           <Image

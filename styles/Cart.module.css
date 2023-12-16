@@ -1,8 +1,37 @@
 .container {
-  margin-top: 100px;
   display: flex;
   padding: 50px;
   color: black;
+}
+
+.pageHeader {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/img/cart-page-header-img.jpg");
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: -90px;
+  background-size: cover;
+}
+
+.pageHeader h1 {
+  padding: 50px;
+  text-align: center;
+  color: #fff; /* Your desired text color */
+  font-size: 2.5rem; /* Your desired font size */
+}
+
+@media (min-width: 992px) {
+  .pageHeader {
+    margin-top: 100px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .pageHeader {
+    margin-top: 97px !important;
+  }
 }
 
 .left {
