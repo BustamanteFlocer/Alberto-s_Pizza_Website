@@ -80,8 +80,8 @@ const Clients = () => {
   return (
     <div className={styles.container} id="client">
       <Slide direction="left">
-        <span className={`${styles.green} ${styles.span}`}>testimonials</span>
-        <h1 className={styles.h1}>what clients say</h1>
+        <h3>our testimonials</h3>
+        <h1 className={styles.h1}>Our Client Saying!</h1>
       </Slide>
       <div className={styles.testimonials}>
         <Slider ref={arrowRef} {...settings}>

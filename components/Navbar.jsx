@@ -28,7 +28,7 @@ const Navbar = () => {
         <Link href="/" passHref>
           <li className={styles.listItem}>Home</li>
         </Link>
-        <Link href="/about" passHref>
+        <Link href="/Menu" passHref>
           <li className={styles.listItem}>Menu</li>
         </Link>
         <Link href="/about" passHref>

@@ -1,6 +1,5 @@
 .container {
-  color: black;
-  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+  background: #f4f6f8;
   padding: 1.5rem 1rem;
   margin: 0 1rem;
   border-radius: 20px;
@@ -24,7 +23,7 @@
 
 .body {
   font-size: 0.8rem;
-  color: aliceblue;
+  color: black;
   margin-bottom: 1.5rem;
 }
 .footer {
@@ -41,7 +40,7 @@
 
 .h1 {
   font-size: 1.2rem;
-  color: white;
+  color: black;
   font-weight: 700;
 }
 @media (max-width: 580px) {
@@ -57,7 +56,7 @@
 
 .p {
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(38, 35, 35, 0.785);
   @media (max-width: 538px) {
     font-size: 0.6rem;
   }
