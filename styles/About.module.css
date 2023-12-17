@@ -173,3 +173,56 @@
   color: #fff;
   font-size: 50px;
 }
+
+.contentIntro {
+  background-color: white; /* Sets the background color to white */
+  padding-top: 77px; /* Sets the top padding to 77 pixels */
+  padding-bottom: 133px; /* Sets the bottom padding to 133 pixels */
+}
+
+.contain {
+  max-width: 1200px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  background-color: rgb(243, 86, 7);
+  margin-left: -15px;
+}
+
+.column {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  padding-top: 30px;
+  background-color: #777777;
+}
+
+.imageWrapper {
+  border-radius: 10px; /* Applies a border radius of 10 pixels */
+  overflow: hidden; /* Ensures that any content exceeding the border radius is hidden */
+  position: relative;
+  background-color: rgb(75, 213, 29);
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper .img:hover {
+  transform: scale(1.1);
+}
+
+.wrapText {
+  padding-top: 35px;
+}
+
+.texts {
+  font-size: 1.375rem; /* Adjust the font size as needed */
+  line-height: 1.5; /* Adjust the line height as needed */
+  font-weight: bold; /* Adjust the font weight as needed */
+  color: #000;
+  transition: opacity 0.4s ease;
+  margin-bottom: 13px;
+}
+
+.paragraph {
+  margin-bottom: 20px;
+}
