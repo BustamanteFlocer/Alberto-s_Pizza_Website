@@ -13,6 +13,7 @@ const Menu = ({ pizzaList }) => {
         <h1>Menu</h1>
       </div>
       <PizzaList pizzaList={pizzaList} />
+
       <Footer />
     </div>
   );

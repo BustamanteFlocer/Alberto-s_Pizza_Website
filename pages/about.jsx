@@ -3,8 +3,10 @@ import styles from "../styles/About.module.css";
 import Clients from "@/components/Clients";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Parallax } from "react-parallax";
 
 const About = () => {
+  const woman = "/img/cart-page-header-img.jpg";
   return (
     <div>
       <Navbar />
@@ -44,6 +46,13 @@ const About = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className={styles.parallax}>
+        <Parallax className={styles.parallaxImg} strength={20} bgImage={woman}>
+          <div className={styles.content}>
+            <div className={styles.textContent}>Normal Parallax</div>
+          </div>
+        </Parallax>
       </div>
       <Clients />
       <Footer />

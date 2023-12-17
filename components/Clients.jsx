@@ -11,8 +11,7 @@ let clients = [
   {
     name: "John Michel",
     position: "web developer",
-    img_url:
-      "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
+    img_url: "/img/ALOHAPIZZA.png",
     stars: 3,
     disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
@@ -21,8 +20,7 @@ let clients = [
   {
     name: "John Michel",
     position: "web developer",
-    img_url:
-      "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
+    img_url: "/img/MEATZZA.png",
     stars: 5,
     disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
@@ -30,8 +28,25 @@ let clients = [
   {
     name: "John Michel",
     position: "web developer",
-    img_url:
-      "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
+    img_url: "/img/HAM&CHEESE.png",
+    stars: 5,
+    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+  },
+
+  {
+    name: "John Michel",
+    position: "web developer",
+    img_url: "/img/bg.png",
+    stars: 5,
+    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+  },
+
+  {
+    name: "John Michel",
+    position: "web developer",
+    img_url: "/img/pizza.png",
     stars: 5,
     disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
