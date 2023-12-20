@@ -47,8 +47,9 @@ const About = () => {
           </div>
         </div>
       </div>
+
       <div className={styles.parallax}>
-        <Parallax className={styles.parallaxImg} strength={20} bgImage={woman}>
+        <Parallax className={styles.parallaxImg} strength={200} bgImage={woman}>
           <div className={styles.content}>
             <div className={styles.textContent}>Normal Parallax</div>
           </div>
@@ -66,8 +67,8 @@ const About = () => {
                       className={styles.img}
                       src="/img/bg1.jpg"
                       alt=""
-                      width={306}
-                      height={182}
+                      width={350}
+                      height={200}
                     />
                   </a>
                 </div>
@@ -93,8 +94,8 @@ const About = () => {
                       className={styles.img}
                       src="/img/bg1.jpg"
                       alt=""
-                      width={306}
-                      height={182}
+                      width={350}
+                      height={200}
                     />
                   </a>
                 </div>
@@ -120,8 +121,8 @@ const About = () => {
                       className={styles.img}
                       src="/img/bg1.jpg"
                       alt=""
-                      width={306}
-                      height={182}
+                      width={350}
+                      height={200}
                     />
                   </a>
                 </div>
@@ -137,6 +138,81 @@ const About = () => {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Try */}
+
+      <div className={styles.body}>
+        <div className={styles.cover}>
+          <div className={styles.box}>
+            <div className={styles.imageWrappers}>
+              <a href="#">
+                <Image
+                  className={styles.tryimg}
+                  src="/img/bg1.jpg"
+                  alt=""
+                  width={350}
+                  height={200}
+                />
+              </a>
+            </div>
+
+            <div className={styles.wrapTexts}>
+              <h4>Romantic Restaurant</h4>
+
+              <p>
+                Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
+                eros.
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.box}>
+            <div className={styles.imageWrappers}>
+              <a href="#">
+                <Image
+                  className={styles.tryimg}
+                  src="/img/bg1.jpg"
+                  alt=""
+                  width={350}
+                  height={200}
+                />
+              </a>
+            </div>
+
+            <div className={styles.wrapTexts}>
+              <h4>Romantic Restaurant</h4>
+
+              <p>
+                Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
+                eros.
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.box}>
+            <div className={styles.imageWrappers}>
+              <a href="#">
+                <Image
+                  className={styles.tryimg}
+                  src="/img/bg1.jpg"
+                  alt=""
+                  width={350}
+                  height={200}
+                />
+              </a>
+            </div>
+
+            <div className={styles.wrapTexts}>
+              <h4>Romantic Restaurant</h4>
+
+              <p>
+                Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
+                eros.
+              </p>
             </div>
           </div>
         </div>
