@@ -189,82 +189,6 @@
 }
 
 /* 3 Column Image CSS*/
-.contain {
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 15px;
-  width: 100%;
-  padding-left: 15px;
-  background-color: #777777;
-}
-
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  justify-content: center;
-  align-items: center;
-  margin-left: -15px;
-}
-
-.column {
-  -ms-flex: 0 0 33.333333%;
-  flex: 0 0 33.333333%;
-  justify-content: center;
-  align-items: center;
-  padding-top: 30px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.imageWrapper {
-  margin: auto;
-  border-radius: 10px; /* Applies a border radius of 10 pixels */
-  overflow: hidden; /* Ensures that any content exceeding the border radius is hidden */
-  position: relative;
-  background-color: rgb(75, 213, 29);
-  transition: transform 0.3s ease;
-  border-radius: 10px;
-  display: block;
-}
-
-.imageWrapper .img {
-  width: 100%;
-  height: auto;
-  -webkit-transition: all 0.6s;
-  -o-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  transition: all 0.6s;
-}
-.imageWrapper:hover .img {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.wrapText {
-  padding-top: 35px;
-  width: 350px;
-  color: #000;
-  background-color: aqua;
-}
-
-.texts {
-  font-size: 1.375rem; /* Adjust the font size as needed */
-  line-height: 1.5; /* Adjust the line height as needed */
-  font-weight: bold; /* Adjust the font weight as needed */
-  color: #000;
-  transition: opacity 0.4s ease;
-  margin-bottom: 13px;
-}
-
-.paragraph {
-  margin-bottom: 20px;
-}
-
 .body {
   align-items: center;
   display: flex;
@@ -283,33 +207,29 @@
 }
 
 .box {
-  width: 350px;
-  height: 130%;
+  width: 28vw;
+  height: 100%;
   margin: 0 20px;
-  background-color: #1d44f9;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .imageWrappers {
-  margin: auto;
+  height: auto;
+  width: 28vw;
   border-radius: 10px; /* Applies a border radius of 10 pixels */
   overflow: hidden; /* Ensures that any content exceeding the border radius is hidden */
   position: relative;
   transition: transform 0.3s ease;
-  border-radius: 10px;
   display: block;
 }
 
-.tryimg {
-  height: 250px;
-  width: 350px;
-  -webkit-transition: all 0.6s;
-  -o-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  transition: all 0.6s;
+.img {
+  height: auto;
+  width: 28vw;
+  transition: transform 0.3s ease;
 }
 
-.tryimg:hover {
+.img:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -329,4 +249,18 @@
 
 .cover p {
   color: #000;
+}
+
+@media (max-width: 860px) {
+  .box {
+    width: 75vw;
+  }
+  .imageWrappers {
+    width: 75vw;
+    height: auto;
+  }
+  .img {
+    width: 75vw;
+    height: auto;
+  }
 }

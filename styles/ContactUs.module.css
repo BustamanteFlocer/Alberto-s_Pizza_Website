@@ -1,10 +1,8 @@
 .container {
   margin-top: 2rem;
   position: relative;
-
   padding: 2rem 0;
-  width: 80%;
-  max-width: 1280px;
+  width: 95%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -14,34 +12,33 @@
   width: 100%;
   background-color: #fff8f5;
 }
-@media (max-width: 840px) {
-  .container {
-    width: 90%;
-  }
+
+.profile {
+  height: 77vh;
+  margin-left: 40px;
+  padding-top: 20px;
+  width: 35vw;
 }
 
-@media (max-width: 650px) {
-  .container {
-    flex-direction: column;
-    gap: 3rem;
-  }
-}
-
-.profile .title {
+.profile h1 {
   color: #000;
-  flex: 1;
-}
-.address {
+  font-size: 2.3rem;
   padding: 1rem 0;
 }
-.address h1 {
+
+.address {
+  margin-top: 110px;
+  padding: 1rem 0;
+}
+.address h2 {
   color: #191923;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
 }
 
 .address p {
   color: #191923;
   width: 60%;
+  font-size: 1rem;
   padding-top: 0.5rem;
 }
 @media (max-width: 650px) {
@@ -50,9 +47,10 @@
   }
 }
 
-.links h1 {
+.links h2 {
   color: #191923;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
+  padding-top: 10px;
   margin-bottom: 0.5rem;
 }
 .linkIcon {
@@ -65,6 +63,7 @@
   gap: 0.5rem;
 }
 .links a {
+  font-size: 1rem;
   color: #000;
 }
 .links a {
@@ -75,117 +74,14 @@
 .links a:hover {
   color: orange;
 }
-.profile {
-  margin-top: 150px;
-}
-.profiles h1 {
-  color: #000;
-  font-size: 1.2rem;
-  padding: 1rem 0;
-}
 
-.icon {
-  display: flex;
-  align-items: center;
-}
-.profiles span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000;
-  width: 2rem;
-  height: 2rem;
-  margin-right: 0.5rem;
-  border-radius: 50px;
-}
-.profiles span:hover {
-  background-color: orange;
-}
-
-.profiles a {
-  margin-top: 0.2rem;
-  color: #fff;
-}
-
-.arrowUp {
-  width: 2rem;
-  height: 2rem;
-  background-color: #000000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-top: 2rem;
-}
-@media (max-width: 650px) {
-  .arrowUp {
-    position: absolute;
-    right: 3rem;
-    top: 16rem;
-  }
-}
-
-.forms {
-  flex: 1;
-}
-.forms h1 {
-  font-size: 1.3rem;
-  padding-bottom: 0.7rem;
-}
-
-.forms .form {
-  background-color: #191923;
-  padding: 0.8rem;
-  border-radius: 5px;
-}
-.form .name,
-.message,
-.email {
-  display: flex;
-  border: 1px solid gray;
-  margin-bottom: 0.5rem;
-}
-.form input,
-.form textarea {
-  width: 100%;
-  border: none;
-  outline: none;
-  color: #fff;
-  background-color: transparent;
-  padding: 1rem 0.5rem;
-}
-
-.form span {
-  background-color: #3e3e3e;
-  width: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.messageIcon {
-  align-items: flex-end;
-  padding-top: 0.5rem;
-}
-
-.form button {
-  width: 5rem;
-  height: 1.8rem;
-  background-color: #01be96;
-  border: none;
-  border-radius: 5px;
-  filter: drop-shadow(0px 4px 5px #01be9551);
-  cursor: pointer;
-}
-.form button:hover {
-  filter: drop-shadow(0px 6px 9px #01be9551);
-}
+/*Envelope*/
 
 .formWrap {
   flex: 1;
   overflow: hidden;
   height: 447px;
+  background-color: aliceblue;
   margin-left: 5%;
   position: relative;
   top: 0px;
@@ -198,8 +94,9 @@
   bottom: 128px;
   left: 0px;
   background: url("https://i.imgur.com/x7PdObG.png");
-  width: 530px;
-  height: 317px;
+  background-size: cover;
+  width: 590px;
+  height: 320px;
 }
 
 .formWrap:after {
@@ -208,7 +105,8 @@
   bottom: 0px;
   left: 0;
   background: url("https://i.imgur.com/lfI33tF.png");
-  width: 530px;
+  background-size: cover;
+  width: 590px;
   height: 259px;
 }
 
@@ -228,9 +126,8 @@
   top: 200px;
   overflow: hidden;
   height: 200px;
-  width: 400px;
-  margin: 0px auto;
-  padding: 20px;
+  width: 550px;
+  margin-left: 20px;
   border: 1px solid white;
   border-right: 3px;
   transition: all 1s ease-in-out 0.3s;
@@ -241,9 +138,11 @@
 }
 
 .formWrap label {
-  margin: 11px 20px 0 0;
+  margin: 11px 20px 10px 13px;
+  margin-bottom: 20px;
   font-size: 15px;
   color: gray;
+
   text-transform: uppercase;
 }
 
@@ -252,10 +151,10 @@
   font: 14px normal uppercase, arial, serif;
   color: dimgray;
   background: none;
-  width: 380px;
+  width: 520px;
   height: 37px;
   padding: 0px 10px;
-  margin: 0 0 10px 0;
+  margin: 10px 0 10px 13px;
   border: 1px solid #f8f5f1;
   border-radius: 5px;
 }
@@ -275,7 +174,8 @@
   font-family: tahoma;
   font-size: 24px;
   color: gray;
-  width: 100%;
+  width: 90%;
+  margin-left: 25px;
   text-align: center;
   opacity: 0;
   background: none;
@@ -288,4 +188,18 @@
   z-index: 1;
   opacity: 1;
   transition: opacity 0.5s ease-in-out 1.3s;
+}
+
+@media (max-width: 840px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1190px) {
+  .container {
+    flex-direction: column;
+    gap: 3rem;
+    height: 1010px;
+  }
 }

@@ -56,102 +56,13 @@ const About = () => {
         </Parallax>
       </div>
 
-      <div className={styles.contentIntro}>
-        <div className={styles.contain}>
-          <div className={styles.row}>
-            <div className={styles.column}>
-              <div className={styles.blo1}>
-                <div className={styles.imageWrapper}>
-                  <a href="#">
-                    <Image
-                      className={styles.img}
-                      src="/img/bg1.jpg"
-                      alt=""
-                      width={350}
-                      height={200}
-                    />
-                  </a>
-                </div>
-
-                <div className={styles.wrapText}>
-                  <a href="#">
-                    <h4 className={styles.texts}>Romantic Restaurant</h4>
-                  </a>
-
-                  <p className={styles.paragraph}>
-                    Phasellus lorem enim, luctus ut velit eget, con-vallis
-                    egestas eros.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className={styles.column}>
-              <div className={styles.blo1}>
-                <div className={styles.imageWrapper}>
-                  <a href="#">
-                    <Image
-                      className={styles.img}
-                      src="/img/bg1.jpg"
-                      alt=""
-                      width={350}
-                      height={200}
-                    />
-                  </a>
-                </div>
-
-                <div className={styles.wrapText}>
-                  <a href="#">
-                    <h4 className={styles.texts}>Romantic Restaurant</h4>
-                  </a>
-
-                  <p className={styles.paragraph}>
-                    Phasellus lorem enim, luctus ut velit eget, con-vallis
-                    egestas eros.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className={styles.column}>
-              <div className={styles.blo1}>
-                <div className={styles.imageWrapper}>
-                  <a href="#">
-                    <Image
-                      className={styles.img}
-                      src="/img/bg1.jpg"
-                      alt=""
-                      width={350}
-                      height={200}
-                    />
-                  </a>
-                </div>
-
-                <div className={styles.wrapText}>
-                  <a href="#">
-                    <h4 className={styles.texts}>Romantic Restaurant</h4>
-                  </a>
-
-                  <p className={styles.paragraph}>
-                    Phasellus lorem enim, luctus ut velit eget, con-vallis
-                    egestas eros.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Try */}
-
       <div className={styles.body}>
         <div className={styles.cover}>
           <div className={styles.box}>
             <div className={styles.imageWrappers}>
               <a href="#">
                 <Image
-                  className={styles.tryimg}
+                  className={styles.img}
                   src="/img/bg1.jpg"
                   alt=""
                   width={350}
@@ -174,7 +85,7 @@ const About = () => {
             <div className={styles.imageWrappers}>
               <a href="#">
                 <Image
-                  className={styles.tryimg}
+                  className={styles.img}
                   src="/img/bg1.jpg"
                   alt=""
                   width={350}
@@ -197,7 +108,7 @@ const About = () => {
             <div className={styles.imageWrappers}>
               <a href="#">
                 <Image
-                  className={styles.tryimg}
+                  className={styles.img}
                   src="/img/bg1.jpg"
                   alt=""
                   width={350}

@@ -14,11 +14,11 @@ const ContactUs = () => {
       <div className={styles.container}>
         <div className={styles.profile}>
           <Slide direction="left" delay={1}>
-            <h1 className={styles.title}>Portfolio</h1>
+            <h1 className={styles.header}>Send Us A Message</h1>
           </Slide>
           <div className={styles.address}>
             <Slide direction="left">
-              <h1>Address:</h1>
+              <h2>Address:</h2>
             </Slide>
             <Slide direction="left">
               <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
@@ -27,7 +27,7 @@ const ContactUs = () => {
 
           <div className={styles.links}>
             <Slide direction="left">
-              <h1>Contact me directly:</h1>
+              <h2>Contact us directly:</h2>
             </Slide>
             <div>
               <span>
@@ -48,70 +48,8 @@ const ContactUs = () => {
               </Slide>
             </div>
           </div>
-
-          <div className={styles.profiles}>
-            <Slide direction="left">
-              <h1>Check my profiles</h1>
-            </Slide>
-            <div className={styles.icon}>
-              <Zoom>
-                <span>
-                  <a href="/">
-                    <AiFillGithub />
-                  </a>
-                </span>
-              </Zoom>
-              <Zoom>
-                <span>
-                  <a href="/">
-                    <AiFillLinkedin />
-                  </a>
-                </span>
-              </Zoom>
-              <Zoom>
-                <span>
-                  <a href="/">
-                    <BsFacebook />
-                  </a>
-                </span>
-              </Zoom>
-              <Zoom>
-                <span>
-                  <a href="/">
-                    <BsSlack />
-                  </a>
-                </span>
-              </Zoom>
-            </div>
-          </div>
         </div>
-        {/** 
-      <div className={styles.forms}>
-        <Slide direction="right">
-          <form className={styles.form}>
-            <div className={styles.name}>
-              <span>
-                <CgProfile />
-              </span>
-              <input type="text" placeholder="Fullname..." />
-            </div>
-            <div className={styles.email}>
-              <span>
-                <MdAlternateEmail />
-              </span>
-              <input type="email" placeholder="Email..." />
-            </div>
-            <div className={styles.message}>
-              <span className={styles.messageIcon}>
-                <FiMail />
-              </span>
-              <textarea cols="30" rows="10" placeholder="Message..."></textarea>
-            </div>
-            <button>Submit</button>
-          </form>
-        </Slide>
-      </div>
-  */}
+
         <div id={styles.formWrap} className={styles.formWrap}>
           <form action="">
             <p className={styles.text}>hello joe!</p>
