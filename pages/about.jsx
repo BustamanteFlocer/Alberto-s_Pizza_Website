@@ -16,32 +16,27 @@ const About = () => {
         <div className={styles.main}>
           <Image
             className={styles.img}
-            src="/img/bg1.jpg"
+            src="/img/pizzapic.jpg"
             alt=""
-            width={80}
-            height={80}
+            width={530}
+            height={353}
           />
           <div className={styles.allText}>
-            <h4>About Us</h4>
-            <h1>A House of Creative & Intelligent</h1>
+            <h1>ABOUT US</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              tenetur corrupti sint ratione autem! Itaque error eveniet expedita
-              quia. Neque iste dolor praesentium aperiam hic architecto
-              excepturi nihil cumque dolorem.
+              Alberto's Pizza started small in Cebu City near Vicente Sotto
+              Memorial Medical Center. Our founders wanted great pizzas that
+              wouldn't break the bank. Affordable, but never skimping on quality
+              or freshness.
             </p>
-            <div className={styles.btn}>
-              <button className={styles.button} type="button">
-                {" "}
-                Our Team
-              </button>
-              <button
-                className={`${styles.button} ${styles.button2}`}
-                type="button"
-              >
-                Learn More{" "}
-              </button>
-            </div>
+            <p>
+              Our story is one of a hidden gem discovered by people from all
+              walks of life. Alberto's Pizza has become synonymous with a
+              delightful menu that resonates with pizza lovers everywhere. Join
+              us on a journey of flavors, where each bite tells the tale of our
+              passion for affordable excellence. Alberto's Pizza – where good
+              times and great pizzas meet!
+            </p>
           </div>
         </div>
       </div>

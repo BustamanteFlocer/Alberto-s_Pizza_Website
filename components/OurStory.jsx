@@ -8,32 +8,28 @@ const OurStory = () => {
         <div className={styles.main}>
           <Image
             className={styles.img}
-            src="/img/bg1.jpg"
+            src="/img/aboutimgsss.png"
             alt=""
-            width={80}
-            height={80}
+            width={530}
+            height={353}
           />
           <div className={styles.allText}>
-            <h4>OurStory Us</h4>
-            <h1>A House of Creative & Intelligent</h1>
+            <h4>Our Story</h4>
+            <h1>Quality Bites, Affordable Delights!</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              tenetur corrupti sint ratione autem! Itaque error eveniet expedita
-              quia. Neque iste dolor praesentium aperiam hic architecto
-              excepturi nihil cumque dolorem.
+              At Alberto's Pizza, we're not just about slices; we're about
+              creating moments of joy around good food. From our humble
+              beginnings near Vicente Sotto Memorial Medical Center in Cebu
+              City, we've been on a mission to serve up affordable pizzas
+              without compromising on quality or freshness.
             </p>
-            <div className={styles.btn}>
-              <button className={styles.button} type="button">
-                {" "}
-                Our Team
-              </button>
-              <button
-                className={`${styles.button} ${styles.button2}`}
-                type="button"
-              >
-                Learn More{" "}
-              </button>
-            </div>
+
+            <p>
+              Our diverse menu caters to all tastes, drawing in people from
+              various walks of life. Discover the simple pleasure of a great
+              slice at Alberto's Pizza. Join us, and let's share the goodness,
+              one slice at a time!
+            </p>
           </div>
         </div>
       </div>

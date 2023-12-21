@@ -46,7 +46,7 @@
   background-size: cover;
 }
 .container .main .img {
-  width: 580px;
+  width: 530px;
   max-width: 100%;
   height: auto;
   padding: 0 10px;
@@ -88,7 +88,7 @@
   font-size: 16px;
   color: #777777;
   line-height: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
 }
 
 .btn .button {

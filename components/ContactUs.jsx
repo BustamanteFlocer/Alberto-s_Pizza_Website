@@ -1,10 +1,6 @@
 import React from "react";
-import { MdAlternateEmail } from "react-icons/md";
 import styles from "../styles/ContactUs.module.css";
-import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-import { BsFacebook, BsSlack } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 
@@ -62,15 +58,25 @@ const ContactUs = () => {
                 id={styles.message}
                 cols="30"
                 rows="10"
-                defaultValue="your message"
+                placeholder="Your message"
               ></textarea>
 
               <p className={styles.text}>Best,</p>
 
               <label htmlFor="name">Name:</label>
-              <input type="text" name="name" id="name" />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your name"
+              />
               <label htmlFor="email">Email:</label>
-              <input type="text" name="email" id="email" />
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Your email"
+              />
 
               <input type="submit" name="submit" value="Send" />
             </form>
