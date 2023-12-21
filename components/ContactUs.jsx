@@ -12,65 +12,69 @@ const ContactUs = () => {
   return (
     <div className={styles.contain}>
       <div className={styles.container}>
-        <div className={styles.profile}>
-          <Slide direction="left" delay={1}>
-            <h1 className={styles.header}>Send Us A Message</h1>
-          </Slide>
-          <div className={styles.address}>
-            <Slide direction="left">
-              <h2>Address:</h2>
+        <div className={styles.box1}>
+          <div className={styles.profile}>
+            <Slide direction="left" delay={1}>
+              <h1 className={styles.header}>Send Us A Message</h1>
             </Slide>
-            <Slide direction="left">
-              <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
-            </Slide>
-          </div>
-
-          <div className={styles.links}>
-            <Slide direction="left">
-              <h2>Contact us directly:</h2>
-            </Slide>
-            <div>
-              <span>
-                <FiPhoneCall className={styles.linkIcon} />
-              </span>
+            <div className={styles.address}>
               <Slide direction="left">
-                <a href="tel:+4733378901">+47 333 78 901</a>
+                <h2>Address:</h2>
+              </Slide>
+              <Slide direction="left">
+                <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
               </Slide>
             </div>
-            <div>
+
+            <div className={styles.links}>
               <Slide direction="left">
+                <h2>Contact us directly:</h2>
+              </Slide>
+              <div>
                 <span>
-                  <HiOutlineMailOpen className={styles.linkIcon} />
+                  <FiPhoneCall className={styles.linkIcon} />
                 </span>
-              </Slide>
-              <Slide>
-                <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
-              </Slide>
+                <Slide direction="left">
+                  <a href="tel:+4733378901">+47 333 78 901</a>
+                </Slide>
+              </div>
+              <div>
+                <Slide direction="left">
+                  <span>
+                    <HiOutlineMailOpen className={styles.linkIcon} />
+                  </span>
+                </Slide>
+                <Slide>
+                  <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
+                </Slide>
+              </div>
             </div>
           </div>
         </div>
 
-        <div id={styles.formWrap} className={styles.formWrap}>
-          <form action="">
-            <p className={styles.text}>hello joe!</p>
-            <label htmlFor="message">message:</label>
-            <textarea
-              name="message"
-              id={styles.message}
-              cols="30"
-              rows="10"
-              defaultValue="your message"
-            ></textarea>
+        <div className={styles.box2}>
+          <div id={styles.formWrap} className={styles.formWrap}>
+            <form action="">
+              <p className={styles.text}>hello joe!</p>
+              <label htmlFor="message">message:</label>
+              <textarea
+                name="message"
+                id={styles.message}
+                cols="30"
+                rows="10"
+                defaultValue="your message"
+              ></textarea>
 
-            <p className={styles.text}>Best,</p>
+              <p className={styles.text}>Best,</p>
 
-            <label htmlFor="name">Name:</label>
-            <input type="text" name="name" id="name" />
-            <label htmlFor="email">Email:</label>
-            <input type="text" name="email" id="email" />
+              <label htmlFor="name">Name:</label>
+              <input type="text" name="name" id="name" />
+              <label htmlFor="email">Email:</label>
+              <input type="text" name="email" id="email" />
 
-            <input type="submit" name="submit" value="I, send thanks!" />
-          </form>
+              <input type="submit" name="submit" value="Send" />
+            </form>
+          </div>
         </div>
       </div>
     </div>
