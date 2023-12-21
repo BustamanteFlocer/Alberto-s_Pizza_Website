@@ -9,6 +9,8 @@ import ContactUs from "@/components/ContactUs";
 import OurStory from "@/components/OurStory";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import MenuParallax from "@/components/MenuParallax";
+import MoreInfo from "@/components/MoreInfo";
 
 export default function Home({ pizzaList }) {
   return (
@@ -21,8 +23,9 @@ export default function Home({ pizzaList }) {
       <Navbar />
       <Featured />
       <OurStory />
+      <MoreInfo />
       <MySwiper />
-
+      <MenuParallax />
       <PizzaList pizzaList={pizzaList} />
 
       <Clients />

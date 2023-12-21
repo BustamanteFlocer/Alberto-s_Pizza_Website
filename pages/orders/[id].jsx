@@ -29,7 +29,7 @@ const Order = ({ order }) => {
                   <th>Address</th>
                   <th>Total</th>
                 </tr>
-                <tr>
+                <tr className={styles.tr}>
                   <td>
                     <span className={styles.id}>{order._id}</span>
                   </td>

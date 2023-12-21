@@ -200,11 +200,6 @@
 }
 
 @media (max-width: 1350px) {
-  .container {
-    flex-direction: column;
-    height: 580px;
-  }
-
   .formWrap {
     height: 430px;
   }

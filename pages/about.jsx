@@ -3,14 +3,12 @@ import styles from "../styles/About.module.css";
 import Clients from "@/components/Clients";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Parallax } from "react-parallax";
 
 const About = () => {
-  const woman = "/img/cart-page-header-img.jpg";
   return (
     <div>
       <Navbar />
-      <div className={` ${styles.pageHeader}`}>
+      <div className={styles.pageHeader}>
         <h1>About</h1>
       </div>
 
@@ -46,14 +44,6 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className={styles.parallax}>
-        <Parallax className={styles.parallaxImg} strength={200} bgImage={woman}>
-          <div className={styles.content}>
-            <div className={styles.textContent}>Normal Parallax</div>
-          </div>
-        </Parallax>
       </div>
 
       <div className={styles.body}>
