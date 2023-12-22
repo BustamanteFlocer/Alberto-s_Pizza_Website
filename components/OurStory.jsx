@@ -14,7 +14,7 @@ const OurStory = () => {
             height={353}
           />
           <div className={styles.allText}>
-            <h4>Our Story</h4>
+            <h4>About Us</h4>
             <h1>Quality Bites, Affordable Delights!</h1>
             <p>
               At Alberto's Pizza, we're not just about slices; we're about

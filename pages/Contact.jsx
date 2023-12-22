@@ -10,12 +10,10 @@ const Contact = () => {
   return (
     <div className={styles.contain}>
       <Navbar />
-
-      <div className={` ${styles.pageHeader}`}>
+      <div className={styles.pageHeader}>
         <h1>Contact</h1>
       </div>
 
-      {/**Contact Form */}
       <div className={styles.wrapper}>
         <div className={`${styles.containerFluid} ${styles.contact}`}>
           <div className={`${styles.contactContainer} ${styles.row} `}>
@@ -77,8 +75,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
-      {/**End of Contact Form */}
 
       <Footer />
     </div>

@@ -24,10 +24,9 @@ export default function Home({ pizzaList }) {
       <Featured />
       <OurStory />
       <MoreInfo />
-      <MySwiper />
       <MenuParallax />
       <PizzaList pizzaList={pizzaList} />
-
+      <MySwiper />
       <Clients />
       <ContactUs />
       <Footer />

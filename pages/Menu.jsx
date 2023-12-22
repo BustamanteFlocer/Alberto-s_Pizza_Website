@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../styles/Menu.module.css";
 import Navbar from "@/components/Navbar";
 import PizzaList from "@/components/PizzaList";
@@ -13,7 +12,6 @@ const Menu = ({ pizzaList }) => {
         <h1>Menu</h1>
       </div>
       <PizzaList pizzaList={pizzaList} />
-
       <Footer />
     </div>
   );

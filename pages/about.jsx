@@ -16,13 +16,13 @@ const About = () => {
         <div className={styles.main}>
           <Image
             className={styles.img}
-            src="/img/pizzapic.jpg"
+            src="/img/pizzaa.webp"
             alt=""
             width={530}
             height={353}
           />
           <div className={styles.allText}>
-            <h1>ABOUT US</h1>
+            <h1>Our Story</h1>
             <p>
               Alberto's Pizza started small in Cebu City near Vicente Sotto
               Memorial Medical Center. Our founders wanted great pizzas that
