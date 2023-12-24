@@ -1,4 +1,4 @@
-import styles from "../styles/Featured.module.css";
+import styles from "@/components/Featured/Featured.module.css";
 import Image from "next/image";
 
 const Featured = () => {

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import styles from "../styles/Client.module.css";
-import ClientSlider from "./ClientSlider";
+import styles from "@/components/Clients/Client.module.css";
+import ClientSlider from "../ClientSlider/ClientSlider";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Slide } from "react-awesome-reveal";
 import "slick-carousel/slick/slick.css";

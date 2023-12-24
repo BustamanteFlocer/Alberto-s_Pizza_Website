@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/ContactUs.module.css";
+import styles from "@/components/ContactUs/ContactUs.module.css";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";

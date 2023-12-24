@@ -1,6 +1,6 @@
-import styles from "../styles/Contact.module.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import styles from "@/pages/Contact/Contact.module.css";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 import { MdRestaurantMenu } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";

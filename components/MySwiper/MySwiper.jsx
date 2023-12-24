@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Swiper.module.css";
+import styles from "@/components/MySwiper/Swiper.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { IoMdStar } from "react-icons/io";
 import "swiper/css";

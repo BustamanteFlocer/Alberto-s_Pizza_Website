@@ -1,4 +1,4 @@
-import styles from "../styles/OrderDetail.module.css";
+import styles from "@/components/OrderDetail/OrderDetail.module.css";
 import { useEffect, useState } from "react";
 
 const OrderDetail = ({ total, createOrder, setShowOrderDetail }) => {

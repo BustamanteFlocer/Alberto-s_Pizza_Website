@@ -1,8 +1,8 @@
 import Image from "next/image";
-import styles from "../styles/About.module.css";
-import Clients from "@/components/Clients";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import styles from "@/pages/about/About.module.css";
+import Clients from "@/components/Clients/Clients";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 const About = () => {
   return (

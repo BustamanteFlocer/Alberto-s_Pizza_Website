@@ -3,8 +3,8 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "../styles/Dashboard.module.css";
 import NavAdmin from "./NavAdmin";
-import AddButton from "@/components/AddButton";
-import Add from "@/components/Add";
+import AddButton from "@/components/AddButton/AddButton";
+import Add from "@/components/Add/Add";
 
 const Dashboard = ({ products }) => {
   const [close, setClose] = useState(true);

@@ -1,8 +1,8 @@
 import styles from "../../styles/Order.module.css";
 import Image from "next/image";
 import axios from "axios";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 const Order = ({ order }) => {
   const status = order.status;

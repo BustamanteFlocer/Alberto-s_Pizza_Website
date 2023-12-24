@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Cart.module.css";
+import styles from "@/pages/cart/Cart.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import {
@@ -8,12 +8,11 @@ import {
   usePayPalScriptReducer,
 } from "@paypal/react-paypal-js";
 import { useRouter } from "next/router";
-import { reset } from "../redux/cartSlice";
+import { reset } from "../../redux/cartSlice";
 import axios from "axios";
-import OrderDetail from "@/components/OrderDetail";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import DeliveryButton from "@/components/DeliveryButton";
+import OrderDetail from "@/components/OrderDetail/OrderDetail";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 const Cart = () => {
   const [showOrderDetail, setShowOrderDetail] = useState(false);

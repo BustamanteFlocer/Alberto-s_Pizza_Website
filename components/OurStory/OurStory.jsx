@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/OurStory.module.css";
+import styles from "@/components/OurStory/OurStory.module.css";
 
 const OurStory = () => {
   return (

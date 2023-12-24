@@ -1,4 +1,4 @@
-import styles from "../styles/Footer.module.css";
+import styles from "@/components/Footer/Footer.module.css";
 import Image from "next/image";
 import { FaRegArrowAltCircleRight, FaRegEnvelope } from "react-icons/fa";
 import { TiSocialFacebook } from "react-icons/ti";

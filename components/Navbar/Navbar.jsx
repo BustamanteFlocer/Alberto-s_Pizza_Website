@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Navbar.module.css";
+import styles from "@/components/Navbar/Navbar.module.css";
 import { useSelector } from "react-redux";
 import Link from "next/link";
 import { TiShoppingCart } from "react-icons/ti";
@@ -28,16 +28,16 @@ const Navbar = () => {
         <Link href="/" passHref>
           <li className={styles.listItem}>Home</li>
         </Link>
-        <Link href="/Menu" passHref>
+        <Link href="/Menu/Menu" passHref>
           <li className={styles.listItem}>Menu</li>
         </Link>
-        <Link href="/about" passHref>
+        <Link href="/about/about" passHref>
           <li className={styles.listItem}>About</li>
         </Link>
-        <Link href="/Contact" passHref>
+        <Link href="/Contact/Contact" passHref>
           <li className={styles.listItem}>Contact</li>
         </Link>
-        <Link href="/cart" passHref>
+        <Link href="/cart/cart" passHref>
           <div className={styles.listItem}>
             <div className={styles.cart}>
               <TiShoppingCart className={styles.shoppingCart} />

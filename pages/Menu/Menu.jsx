@@ -1,7 +1,7 @@
-import styles from "../styles/Menu.module.css";
-import Navbar from "@/components/Navbar";
-import PizzaList from "@/components/PizzaList";
-import Footer from "@/components/Footer";
+import styles from "@/pages/Menu/Menu.module.css";
+import Navbar from "@/components/Navbar/Navbar";
+import PizzaList from "@/components/PizzaList/PizzaList";
+import Footer from "@/components/Footer/Footer";
 import axios from "axios";
 
 const Menu = ({ pizzaList }) => {

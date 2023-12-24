@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/MenuParallax.module.css";
+import styles from "@/components/MenuParallax/MenuParallax.module.css";
 
 import { Parallax } from "react-parallax";
 

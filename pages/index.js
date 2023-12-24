@@ -1,16 +1,16 @@
 import axios from "axios";
 import Head from "next/head";
 import styles from "../styles/page.module.css";
-import Featured from "../components/Featured";
-import MySwiper from "../components/MySwiper";
-import PizzaList from "../components/PizzaList";
-import Clients from "@/components/Clients";
-import ContactUs from "@/components/ContactUs";
-import OurStory from "@/components/OurStory";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import MenuParallax from "@/components/MenuParallax";
-import MoreInfo from "@/components/MoreInfo";
+import Featured from "../components/Featured/Featured";
+import MySwiper from "../components/MySwiper/MySwiper";
+import PizzaList from "../components/PizzaList/PizzaList";
+import Clients from "@/components/Clients/Clients";
+import ContactUs from "@/components/ContactUs/ContactUs";
+import OurStory from "@/components/OurStory/OurStory";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
+import MenuParallax from "@/components/MenuParallax/MenuParallax";
+import MoreInfo from "@/components/MoreInfo/MoreInfo";
 
 export default function Home({ pizzaList }) {
   return (
@@ -21,7 +21,7 @@ export default function Home({ pizzaList }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <Featured />
+      <Featured></Featured>
       <OurStory />
       <MoreInfo />
       <MenuParallax />

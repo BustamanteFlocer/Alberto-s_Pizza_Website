@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/ClientSlider.module.css";
+import styles from "@/components/ClientSlider/ClientSlider.module.css";
 import { IoIosQuote } from "react-icons/io";
 import { AiOutlineStar } from "react-icons/ai";
 
