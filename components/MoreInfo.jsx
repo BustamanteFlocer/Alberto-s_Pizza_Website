@@ -10,7 +10,7 @@ const MoreInfo = () => {
             <a href="#">
               <Image
                 className={styles.img}
-                src="/img/bg1.jpg"
+                src="/img/cheappizza.jpg"
                 alt=""
                 width={350}
                 height={200}
@@ -19,7 +19,7 @@ const MoreInfo = () => {
           </div>
 
           <div className={styles.wrapTexts}>
-            <h4>Romantic Restaurant</h4>
+            <h4>Affordable Price</h4>
 
             <p>
               Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
@@ -33,7 +33,7 @@ const MoreInfo = () => {
             <a href="#">
               <Image
                 className={styles.img}
-                src="/img/bg1.jpg"
+                src="/img/freedeliver.jpg"
                 alt=""
                 width={350}
                 height={200}
@@ -42,7 +42,7 @@ const MoreInfo = () => {
           </div>
 
           <div className={styles.wrapTexts}>
-            <h4>Romantic Restaurant</h4>
+            <h4>Free Delivery</h4>
 
             <p>
               Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
@@ -56,7 +56,7 @@ const MoreInfo = () => {
             <a href="#">
               <Image
                 className={styles.img}
-                src="/img/bg1.jpg"
+                src="/img/yum.jpg"
                 alt=""
                 width={350}
                 height={200}
@@ -65,7 +65,7 @@ const MoreInfo = () => {
           </div>
 
           <div className={styles.wrapTexts}>
-            <h4>Romantic Restaurant</h4>
+            <h4>Yummy Pizza</h4>
 
             <p>
               Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
