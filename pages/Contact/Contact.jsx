@@ -26,16 +26,18 @@ const Contact = () => {
               <div className={styles.contactForm}>
                 <h1 data-aos="fade-up">Get in touch</h1>
                 <p data-aos="fade-up" data-aos-delay="300">
-                  The contact form is currently inactive. Get a functional and
-                  working contact form with Ajax & PHP in a few minutes. Just
-                  copy and paste the files, add a little code and you're done.
+                  Craving an extraordinary pizza experience that transcends the
+                  ordinary? Look no further than Alberto's Pizza, where every
+                  slice is a masterpiece! Dial, click, or tap your way to pizza
+                  delight – Alberto's is just a touch away from turning your
+                  cravings into a flavorful experience!
                 </p>
               </div>
             </div>
 
             <div className={styles.mapContainer}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d981.3526442090455!2d123.8906106!3d10.3089892!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9994dde515555%3A0xf9e837c1d36fb6cc!2sAlberto&#39;s%20Pizza!5e0!3m2!1sen!2sph!4v1703507321310!5m2!1sen!2sph"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
@@ -59,21 +61,21 @@ const Contact = () => {
                 <FaLocationDot className={styles.icons} />
                 <div>
                   <h4>Address</h4>
-                  <p>123 Street New York.USA</p>
+                  <p>15 B. Rodriguez St, Cebu City</p>
                 </div>
               </div>
               <div className={styles.contactInfo}>
                 <IoIosMail className={styles.icons} />
                 <div>
                   <h4>Mail Us</h4>
-                  <p>info@example.com</p>
+                  <p>albertospizza@gmail.com</p>
                 </div>
               </div>
               <div className={styles.contactInfo}>
                 <FaPhoneAlt className={styles.icons} />
                 <div>
                   <h4>Telephone</h4>
-                  <p>(+012) 3456 7890</p>
+                  <p>(+032) 231 4628</p>
                 </div>
               </div>
             </div>

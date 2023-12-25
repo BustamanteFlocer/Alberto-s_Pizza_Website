@@ -57,7 +57,7 @@ const MySwiper = () => {
         data-aos="fade-up"
         data-aos-delay="300"
       >
-        Trending Food
+        Discover Alberto's Bestsellers.
       </h1>
 
       <Swiper

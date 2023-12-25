@@ -15,11 +15,12 @@
 }
 .textCenter {
   text-align: center;
+  font-size: clamp(10px, 4vw, 20px);
   color: black;
 }
 
 .sectionHeading {
-  font-size: 3rem;
+  font-size: clamp(30px, 4vw, 45px);
   color: black;
   padding: 1rem 0;
 }

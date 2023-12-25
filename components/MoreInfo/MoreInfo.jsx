@@ -28,8 +28,8 @@ const MoreInfo = () => {
             <h4>Affordable Price</h4>
 
             <p>
-              Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
-              eros.
+              Affordable slices, priceless bites! Indulge in irresistible flavor
+              on a budget – because good times shouldn't empty your wallet!
             </p>
           </div>
         </div>
@@ -51,8 +51,8 @@ const MoreInfo = () => {
             <h4>Free Delivery</h4>
 
             <p>
-              Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
-              eros.
+              Alberto's Pizza is bringing the feast to your front door. Free
+              delivery – because every bite should be a blissful experience!
             </p>
           </div>
         </div>
@@ -71,11 +71,11 @@ const MoreInfo = () => {
           </div>
 
           <div className={styles.wrapTexts}>
-            <h4>Yummy Pizza</h4>
+            <h4>Flavorful Pizza</h4>
 
             <p>
-              Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
-              eros.
+              From the perfect blend of cheeses to our secret signature sauces,
+              each ingredient is a note in the symphony of taste.
             </p>
           </div>
         </div>

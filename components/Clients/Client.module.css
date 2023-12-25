@@ -14,7 +14,7 @@
 
 .container h3 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: clamp(8px, 4vw, 20px);
   color: #d1411e;
   text-align: center;
   justify-content: center;
@@ -24,7 +24,7 @@
 .container .h1 {
   padding-top: 1rem;
   text-align: center;
-  font-size: 50px;
+  font-size: clamp(30px, 4vw, 50px);
   text-transform: capitalize;
 }
 

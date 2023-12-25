@@ -15,14 +15,16 @@
 }
 
 .desc {
-  font-size: 24px;
+  font-size: 1.3rem;
   color: #444;
+  text-align: justify;
   width: 70%;
   margin-bottom: 30px;
 }
 
 .title {
   color: black;
+  font-size: 2rem;
   margin-bottom: 5vh;
 }
 

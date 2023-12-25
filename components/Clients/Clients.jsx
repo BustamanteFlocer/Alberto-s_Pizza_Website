@@ -100,7 +100,7 @@ const Clients = () => {
     <div className={styles.container} id="client">
       <div data-aos="fade-left">
         <h3>our testimonials</h3>
-        <h1 className={styles.h1}>Our Client Saying!</h1>
+        <h1 className={styles.h1}>What Our Customers are Saying!</h1>
       </div>
       <div className={styles.testimonials}>
         <Slider ref={arrowRef} {...settings}>

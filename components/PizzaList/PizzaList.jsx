@@ -14,9 +14,10 @@ const PizzaList = ({ pizzaList }) => {
         DOUGH-LICIOUS
       </h1>
       <p className={styles.desc} data-aos="fade-up" data-aos-delay="500">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu
-        in pretium molestie. Interdum et malesuada fames acme. Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit.
+        Alberto's Pizza takes pride in offering a DOUGH-LICIOUS menu that is
+        sure to tantalize your taste buds and satisfy your pizza cravings. Our
+        commitment to quality ingredients and expert craftsmanship ensures that
+        every bite is a delightful experience.
       </p>
       <div className={styles.wrapper} data-aos="fade-up" data-aos-delay="500">
         {pizzaList.map((pizza) => (

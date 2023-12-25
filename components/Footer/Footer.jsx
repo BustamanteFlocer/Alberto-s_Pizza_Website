@@ -13,14 +13,15 @@ const Footer = () => {
         <div className={styles.col}>
           <Image
             className={styles.logo}
-            src="/img/logo.png"
+            src="/img/Alberos-logo.png"
             alt=""
-            height="140"
-            width="170"
+            height="70"
+            width="150"
           />
           <p className={styles.logoText}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            laboriosam expedita mollitia libero at iure repudiandae. illum!
+            Craving an extraordinary pizza experience that transcends the
+            ordinary? Look no further than Alberto's Pizza, where every slice is
+            a delight!
           </p>
         </div>
         <div className={styles.col}>
@@ -30,10 +31,11 @@ const Footer = () => {
               <span className={styles.span}></span>
             </div>
           </h3>
-          <p className={styles.info}>ITPL Road</p>
-          <p className={styles.info}>Magpayang, Mainit</p>
-          <p className={styles.info}>Karnataka, PIN 7866, Philippines</p>
+          <p className={styles.info}>15 B. Rodriguez St</p>
+          <p className={styles.info}>Cebu City, Cebu</p>
+          <p className={styles.info}>Philippines</p>
         </div>
+
         <div className={styles.col}>
           <h3>
             Links
