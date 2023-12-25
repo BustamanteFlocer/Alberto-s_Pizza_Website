@@ -86,15 +86,15 @@ const MySwiper = () => {
         <SwiperSlide className={styles.swiperSlide}>
           <Image
             className={styles.img}
-            src="/img/tranding-food-1.png"
+            src="/img/meatza.jpg"
             alt=""
             width="170"
             height="220"
           />
           <div className={styles.trandingSlideContent}>
-            <h1 className={styles.foodPrice}>$20</h1>
+            <h1 className={styles.foodPrice}>₱250</h1>
             <div className={styles.trandingSlideContentBottom}>
-              <h2 className={styles.foodName}>Special Pizza</h2>
+              <h2 className={styles.foodName}>Meatzza</h2>
               <h3 className={styles.foodRating}>
                 <span>4.5</span>
                 <div className={styles.rating}>
@@ -111,15 +111,15 @@ const MySwiper = () => {
         <SwiperSlide className={styles.swiperSlide}>
           <Image
             className={styles.img}
-            src="/img/tranding-food-2.png"
+            src="/img/extravaganz.jpg"
             alt=""
             width="170"
             height="220"
           />
           <div className={styles.trandingSlideContent}>
-            <h1 className={styles.foodPrice}>$20</h1>
+            <h1 className={styles.foodPrice}>₱220</h1>
             <div className={styles.trandingSlideContentBottom}>
-              <h2 className={styles.foodName}>Special Pizza</h2>
+              <h2 className={styles.foodName}>Extravaganza</h2>
               <h3 className={styles.foodRating}>
                 <span>4.5</span>
                 <div className={styles.rating}>
@@ -136,15 +136,41 @@ const MySwiper = () => {
         <SwiperSlide className={styles.swiperSlide}>
           <Image
             className={styles.img}
-            src="/img/tranding-food-3.png"
+            src="/img/peperoni.jpg"
             alt=""
             width="170"
             height="220"
           />
           <div className={styles.trandingSlideContent}>
-            <h1 className={styles.foodPrice}>$20</h1>
+            <h1 className={styles.foodPrice}>₱200</h1>
             <div className={styles.trandingSlideContentBottom}>
-              <h2 className={styles.foodName}>Special Pizza</h2>
+              <h2 className={styles.foodName}>Peperoni Pizza</h2>
+              <h3 className={styles.foodRating}>
+                <span>4.5</span>
+                <div className={styles.rating}>
+                  <IoMdStar className={styles.star} />
+                  <IoMdStar className={styles.star} />
+                  <IoMdStar className={styles.star} />
+                  <IoMdStar className={styles.star} />
+                  <IoMdStar className={styles.star} />
+                </div>
+              </h3>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className={styles.swiperSlide}>
+          <Image
+            className={styles.img}
+            src="/img/viggie.jpg"
+            alt=""
+            width="170"
+            height="220"
+          />
+          <div className={styles.trandingSlideContent}>
+            <h1 className={styles.foodPrice}>₱230</h1>
+            <div className={styles.trandingSlideContentBottom}>
+              <h2 className={styles.foodName}>Viggie Ultimate</h2>
               <h3 className={styles.foodRating}>
                 <span>4.5</span>
                 <div className={styles.rating}>
@@ -161,15 +187,15 @@ const MySwiper = () => {
         <SwiperSlide className={styles.swiperSlide}>
           <Image
             className={styles.img}
-            src="/img/tranding-food-4.png"
+            src="/img/s1.jpg"
             alt=""
             width="170"
             height="220"
           />
           <div className={styles.trandingSlideContent}>
-            <h1 className={styles.foodPrice}>$20</h1>
+            <h1 className={styles.foodPrice}>₱180</h1>
             <div className={styles.trandingSlideContentBottom}>
-              <h2 className={styles.foodName}>Special Pizza</h2>
+              <h2 className={styles.foodName}>Cheese Pizza</h2>
               <h3 className={styles.foodRating}>
                 <span>4.5</span>
                 <div className={styles.rating}>
@@ -186,15 +212,15 @@ const MySwiper = () => {
         <SwiperSlide className={styles.swiperSlide}>
           <Image
             className={styles.img}
-            src="/img/tranding-food-5.png"
+            src="/img/pineapple.jpg"
             alt=""
             width="170"
             height="220"
           />
           <div className={styles.trandingSlideContent}>
-            <h1 className={styles.foodPrice}>$20</h1>
+            <h1 className={styles.foodPrice}>₱200</h1>
             <div className={styles.trandingSlideContentBottom}>
-              <h2 className={styles.foodName}>Special Pizza</h2>
+              <h2 className={styles.foodName}>Aloha Pizza</h2>
               <h3 className={styles.foodRating}>
                 <span>4.5</span>
                 <div className={styles.rating}>
@@ -208,43 +234,19 @@ const MySwiper = () => {
             </div>
           </div>
         </SwiperSlide>
+
         <SwiperSlide className={styles.swiperSlide}>
           <Image
             className={styles.img}
-            src="/img/tranding-food-6.png"
+            src="/img/pacific.jpg"
             alt=""
             width="170"
             height="220"
           />
           <div className={styles.trandingSlideContent}>
-            <h1 className={styles.foodPrice}>$20</h1>
+            <h1 className={styles.foodPrice}>₱200</h1>
             <div className={styles.trandingSlideContentBottom}>
-              <h2 className={styles.foodName}>Special Pizza</h2>
-              <h3 className={styles.foodRating}>
-                <span>4.5</span>
-                <div className={styles.rating}>
-                  <IoMdStar className={styles.star} />
-                  <IoMdStar className={styles.star} />
-                  <IoMdStar className={styles.star} />
-                  <IoMdStar className={styles.star} />
-                  <IoMdStar className={styles.star} />
-                </div>
-              </h3>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className={styles.swiperSlide}>
-          <Image
-            className={styles.img}
-            src="/img/tranding-food-5.png"
-            alt=""
-            width="170"
-            height="220"
-          />
-          <div className={styles.trandingSlideContent}>
-            <h1 className={styles.foodPrice}>$20</h1>
-            <div className={styles.trandingSlideContentBottom}>
-              <h2 className={styles.foodName}>Special Pizza</h2>
+              <h2 className={styles.foodName}>Pacific Viggie</h2>
               <h3 className={styles.foodRating}>
                 <span>4.5</span>
                 <div className={styles.rating}>
