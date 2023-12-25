@@ -1,12 +1,17 @@
 import styles from "@/pages/Contact/Contact.module.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
-import { MdRestaurantMenu } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className={styles.contain}>
       <Navbar />
@@ -19,8 +24,8 @@ const Contact = () => {
           <div className={`${styles.contactContainer} ${styles.row} `}>
             <div className={styles.contactRounded}>
               <div className={styles.contactForm}>
-                <h1>Get in touch</h1>
-                <p>
+                <h1 data-aos="fade-up">Get in touch</h1>
+                <p data-aos="fade-up" data-aos-delay="300">
                   The contact form is currently inactive. Get a functional and
                   working contact form with Ajax & PHP in a few minutes. Just
                   copy and paste the files, add a little code and you're done.

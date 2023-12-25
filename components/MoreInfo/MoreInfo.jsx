@@ -1,11 +1,17 @@
 import Image from "next/image";
 import styles from "@/components/MoreInfo/MoreInfo.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 
 const MoreInfo = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className={styles.body}>
       <div className={styles.cover}>
-        <div className={styles.box}>
+        <div className={styles.box} data-aos="fade-down">
           <div className={styles.imageWrappers}>
             <a href="#">
               <Image
@@ -28,7 +34,7 @@ const MoreInfo = () => {
           </div>
         </div>
 
-        <div className={styles.box}>
+        <div className={styles.box} data-aos="fade-up">
           <div className={styles.imageWrappers}>
             <a href="#">
               <Image
@@ -51,7 +57,7 @@ const MoreInfo = () => {
           </div>
         </div>
 
-        <div className={styles.box}>
+        <div className={styles.box} data-aos="fade-down">
           <div className={styles.imageWrappers}>
             <a href="#">
               <Image

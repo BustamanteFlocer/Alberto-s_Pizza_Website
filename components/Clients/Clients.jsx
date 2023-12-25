@@ -1,11 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Slider from "react-slick";
 import styles from "@/components/Clients/Client.module.css";
 import ClientSlider from "../ClientSlider/ClientSlider";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { Slide } from "react-awesome-reveal";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 let clients = [
   {
@@ -89,15 +90,18 @@ var settings = {
 };
 
 const Clients = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const arrowRef = useRef(null);
   let clientDisc = "";
   clientDisc = clients.map((item, i) => <ClientSlider item={item} key={i} />);
   return (
     <div className={styles.container} id="client">
-      <Slide direction="left">
+      <div data-aos="fade-left">
         <h3>our testimonials</h3>
         <h1 className={styles.h1}>Our Client Saying!</h1>
-      </Slide>
+      </div>
       <div className={styles.testimonials}>
         <Slider ref={arrowRef} {...settings}>
           {clientDisc}

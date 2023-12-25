@@ -1,48 +1,40 @@
-import React from "react";
 import styles from "@/components/ContactUs/ContactUs.module.css";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
-import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 
 const ContactUs = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className={styles.contain}>
       <div className={styles.container}>
         <div className={styles.box1}>
           <div className={styles.profile}>
-            <Slide direction="left" delay={1}>
-              <h1 className={styles.header}>Send Us A Message</h1>
-            </Slide>
-            <div className={styles.address}>
-              <Slide direction="left">
-                <h2>Address:</h2>
-              </Slide>
-              <Slide direction="left">
-                <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
-              </Slide>
+            <h1 className={styles.header} data-aos="fade-right">
+              Send Us A Message
+            </h1>
+            <div className={styles.address} data-aos="fade-right">
+              <h2>Address:</h2>
+              <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
             </div>
 
-            <div className={styles.links}>
-              <Slide direction="left">
-                <h2>Contact us directly:</h2>
-              </Slide>
+            <div className={styles.links} data-aos="fade-right">
+              <h2>Contact us directly:</h2>
               <div>
                 <span>
                   <FiPhoneCall className={styles.linkIcon} />
                 </span>
-                <Slide direction="left">
-                  <a href="tel:+4733378901">+47 333 78 901</a>
-                </Slide>
+                <a href="tel:+4733378901">+47 333 78 901</a>
               </div>
               <div>
-                <Slide direction="left">
-                  <span>
-                    <HiOutlineMailOpen className={styles.linkIcon} />
-                  </span>
-                </Slide>
-                <Slide>
-                  <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
-                </Slide>
+                <span>
+                  <HiOutlineMailOpen className={styles.linkIcon} />
+                </span>
+                <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
               </div>
             </div>
           </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "@/components/MySwiper/Swiper.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { IoMdStar } from "react-icons/io";
@@ -7,10 +6,16 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 const MySwiper = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className={styles.container}>
       <div className={`${styles.spacer} ${styles.layer1}`}>
@@ -41,14 +46,23 @@ const MySwiper = () => {
           ></path>
         </svg>
       </div>
-      <h3 className={`${styles.textCenter} ${styles.sectionSubheading}`}>
+      <h3
+        className={`${styles.textCenter} ${styles.sectionSubheading}`}
+        data-aos="fade-up"
+      >
         - Popular Delivery -
       </h3>
-      <h1 className={`${styles.textCenter} ${styles.sectionHeading}`}>
+      <h1
+        className={`${styles.textCenter} ${styles.sectionHeading}`}
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         Trending Food
       </h1>
 
       <Swiper
+        data-aos="fade-up"
+        data-aos-delay="300"
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}

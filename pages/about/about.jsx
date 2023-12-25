@@ -3,8 +3,14 @@ import styles from "@/pages/about/About.module.css";
 import Clients from "@/components/Clients/Clients";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div>
       <Navbar />
@@ -14,22 +20,26 @@ const About = () => {
 
       <div className={styles.container}>
         <div className={styles.main}>
-          <Image
-            className={styles.img}
-            src="/img/pizzaa.webp"
-            alt=""
-            width={530}
-            height={353}
-          />
+          <div data-aos="fade-right">
+            <Image
+              className={styles.img}
+              src="/img/pizzaa.webp"
+              alt=""
+              width={530}
+              height={353}
+            />
+          </div>
           <div className={styles.allText}>
-            <h1>Our Story</h1>
-            <p>
-              Alberto's Pizza started small in Cebu City near Vicente Sotto
-              Memorial Medical Center. Our founders wanted great pizzas that
-              wouldn't break the bank. Affordable, but never skimping on quality
-              or freshness.
-            </p>
-            <p>
+            <div data-aos="fade-up">
+              <h1>Our Story</h1>
+              <p>
+                Alberto's Pizza started small in Cebu City near Vicente Sotto
+                Memorial Medical Center. Our founders wanted great pizzas that
+                wouldn't break the bank. Affordable, but never skimping on
+                quality or freshness.
+              </p>
+            </div>
+            <p data-aos="fade-up" data-aos-delay="500">
               Our story is one of a hidden gem discovered by people from all
               walks of life. Alberto's Pizza has become synonymous with a
               delightful menu that resonates with pizza lovers everywhere. Join
@@ -37,79 +47,6 @@ const About = () => {
               passion for affordable excellence. Alberto's Pizza – where good
               times and great pizzas meet!
             </p>
-          </div>
-        </div>
-      </div>
-
-      <div className={styles.body}>
-        <div className={styles.cover}>
-          <div className={styles.box}>
-            <div className={styles.imageWrappers}>
-              <a href="#">
-                <Image
-                  className={styles.img}
-                  src="/img/bg1.jpg"
-                  alt=""
-                  width={350}
-                  height={200}
-                />
-              </a>
-            </div>
-
-            <div className={styles.wrapTexts}>
-              <h4>Romantic Restaurant</h4>
-
-              <p>
-                Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
-                eros.
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.box}>
-            <div className={styles.imageWrappers}>
-              <a href="#">
-                <Image
-                  className={styles.img}
-                  src="/img/bg1.jpg"
-                  alt=""
-                  width={350}
-                  height={200}
-                />
-              </a>
-            </div>
-
-            <div className={styles.wrapTexts}>
-              <h4>Romantic Restaurant</h4>
-
-              <p>
-                Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
-                eros.
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.box}>
-            <div className={styles.imageWrappers}>
-              <a href="#">
-                <Image
-                  className={styles.img}
-                  src="/img/bg1.jpg"
-                  alt=""
-                  width={350}
-                  height={200}
-                />
-              </a>
-            </div>
-
-            <div className={styles.wrapTexts}>
-              <h4>Romantic Restaurant</h4>
-
-              <p>
-                Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
-                eros.
-              </p>
-            </div>
           </div>
         </div>
       </div>
