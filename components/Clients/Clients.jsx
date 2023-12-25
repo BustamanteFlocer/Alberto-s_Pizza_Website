@@ -10,47 +10,34 @@ import "aos/dist/aos.css";
 
 let clients = [
   {
-    name: "John Michel",
-    position: "web developer",
-    img_url: "/img/ALOHAPIZZA.png",
-    stars: 3,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+    name: "Flocer Bustamante",
+    position: "customer",
+    img_url: "/img/review1.jpg",
+    stars: 5,
+    disc: `Lovers of pizza always comes to Alberto's who is always on the rescue. Prices are just right and with varieties of flavors to choose from.`,
   },
 
   {
-    name: "John Michel",
-    position: "web developer",
-    img_url: "/img/MEATZZA.png",
+    name: "Cheng Abarquez",
+    position: "customer",
+    img_url: "/img/review2.jpg",
     stars: 5,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+    disc: `On a tight budget and craving for Pizza? This might be the perfect place to be,they do have different varieties and flavors of pizza.`,
   },
   {
-    name: "John Michel",
-    position: "web developer",
-    img_url: "/img/HAM&CHEESE.png",
+    name: "Fatima Eviota",
+    position: "customer",
+    img_url: "/img/review3.jpg",
     stars: 5,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+    disc: `I really like this pizza. It is cheap. What I really likes is that it tastes more local, not the transnational branches. For me, that's the uniquenes of the pizza.`,
   },
 
   {
-    name: "John Michel",
-    position: "web developer",
-    img_url: "/img/bg.png",
+    name: "Sheen Cumatura",
+    position: "customer",
+    img_url: "/img/review4.jpg",
     stars: 5,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
-  },
-
-  {
-    name: "John Michel",
-    position: "web developer",
-    img_url: "/img/pizza.png",
-    stars: 5,
-    disc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`,
+    disc: `Just a dial away and your pizza's delivered. It's a 24 hour food service for hungry online worker stomach or a callcenter agent.`,
   },
 ];
 var settings = {
