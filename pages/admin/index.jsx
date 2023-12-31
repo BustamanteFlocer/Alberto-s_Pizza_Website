@@ -3,6 +3,8 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "../../styles/Dashboard.module.css";
 import NavAdmin from "../NavAdmin";
+import AddButton from "@/components/AddButton/AddButton";
+import Add from "@/components/Add/Add";
 
 const Index = ({ products }) => {
   const [close, setClose] = useState(true);
@@ -26,6 +28,10 @@ const Index = ({ products }) => {
         <section className={styles.menu}>
           <div className={styles.menuList}>
             <h1 className={styles.title}>Menu List</h1>
+            <div>
+              {<AddButton setClose={setClose} />}
+              {!close && <Add setClose={setClose} />}
+            </div>
 
             <table className={styles.table}>
               <thead>
