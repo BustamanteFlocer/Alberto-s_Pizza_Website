@@ -23,7 +23,7 @@ const NavAdmin = () => {
             </div>
           </li>
 
-          <Link href="/dashboard" passHref>
+          <Link href="/admin" passHref>
             <li>
               <div className={styles.menu}>
                 <MdRestaurantMenu className={styles.icons} />
