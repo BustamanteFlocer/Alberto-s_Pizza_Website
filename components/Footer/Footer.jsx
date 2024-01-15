@@ -5,6 +5,7 @@ import { TiSocialFacebook } from "react-icons/ti";
 import { LiaTwitter } from "react-icons/lia";
 import { TiSocialPinterest } from "react-icons/ti";
 import { LiaInstagram } from "react-icons/lia";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -44,26 +45,34 @@ const Footer = () => {
             </div>
           </h3>
           <ul className={styles.links}>
-            <li className={styles.link}>
-              <a className={styles.anchor} href="">
-                Homepage
-              </a>
-            </li>
-            <li className={styles.link}>
-              <a className={styles.anchor} href="">
-                Menu
-              </a>
-            </li>
-            <li className={styles.link}>
-              <a className={styles.anchor} href="">
-                About
-              </a>
-            </li>
-            <li className={styles.link}>
-              <a className={styles.anchor} href="">
-                Contact Us
-              </a>
-            </li>
+            <Link href="/" passHref>
+              <li className={styles.link}>
+                <a className={styles.anchor} href="">
+                  Homepage
+                </a>
+              </li>
+            </Link>
+            <Link href="/Menu" passHref>
+              <li className={styles.link}>
+                <a className={styles.anchor} href="">
+                  Menu
+                </a>
+              </li>
+            </Link>
+            <Link href="/about" passHref>
+              <li className={styles.link}>
+                <a className={styles.anchor} href="">
+                  About
+                </a>
+              </li>
+            </Link>
+            <Link href="/Contact" passHref>
+              <li className={styles.link}>
+                <a className={styles.anchor} href="">
+                  Contact Us
+                </a>
+              </li>
+            </Link>
           </ul>
         </div>
         <div className={styles.col}>

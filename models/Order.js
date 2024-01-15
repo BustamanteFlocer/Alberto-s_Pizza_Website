@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 
+/*This creates a Mongoose schema to define the structure of product documents in the database. */
+
 const OrderSchema = new mongoose.Schema(
   {
     customer: {

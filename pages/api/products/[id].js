@@ -1,6 +1,13 @@
 import dbConnect from "../../../util/mongo";
 import Product from "../../../models/Product";
 
+/**
+ * Handles HTTP requests for CRUD operations on a product resource.
+ * ----------------
+ * @param {Request} req - The incoming HTTP request.
+ * @param {Response} res - The outgoing HTTP response.
+ */
+
 export default async function handler(req, res) {
   const {
     method,
@@ -11,6 +18,7 @@ export default async function handler(req, res) {
 
   await dbConnect();
 
+  // Handles GET requests to retrieve a product by its ID
   if (method === "GET") {
     try {
       const product = await Product.findById(id);
@@ -20,6 +28,7 @@ export default async function handler(req, res) {
     }
   }
 
+  // Handles PUT requests to update a product by its ID
   if (method === "PUT") {
     if (!token || token !== process.env.token) {
       return res.status(401).json("Not authenticated!");
@@ -34,6 +43,7 @@ export default async function handler(req, res) {
     }
   }
 
+  // Handles PUT requests to update a product by its ID
   if (method === "DELETE") {
     try {
       await Product.findByIdAndDelete(id);
