@@ -5,6 +5,7 @@ import Link from "next/link";
 import { TiShoppingCart } from "react-icons/ti";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+
 const Navbar = () => {
   const quantity = useSelector((state) => state.cart.quantity);
 

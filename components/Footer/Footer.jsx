@@ -45,34 +45,29 @@ const Footer = () => {
             </div>
           </h3>
           <ul className={styles.links}>
-            <Link href="/" passHref>
-              <li className={styles.link}>
-                <a className={styles.anchor} href="">
-                  Homepage
-                </a>
-              </li>
-            </Link>
-            <Link href="/Menu" passHref>
-              <li className={styles.link}>
-                <a className={styles.anchor} href="">
-                  Menu
-                </a>
-              </li>
-            </Link>
-            <Link href="/about" passHref>
-              <li className={styles.link}>
-                <a className={styles.anchor} href="">
-                  About
-                </a>
-              </li>
-            </Link>
-            <Link href="/Contact" passHref>
-              <li className={styles.link}>
-                <a className={styles.anchor} href="">
-                  Contact Us
-                </a>
-              </li>
-            </Link>
+            <li className={styles.link}>
+              <a className={styles.anchor} href="/">
+                Homepage
+              </a>
+            </li>
+
+            <li className={styles.link}>
+              <a href="/Menu" className={styles.anchor}>
+                Menu
+              </a>
+            </li>
+
+            <li className={styles.link}>
+              <a className={styles.anchor} href="/about">
+                About
+              </a>
+            </li>
+
+            <li className={styles.link}>
+              <a className={styles.anchor} href="/Contact">
+                Contact Us
+              </a>
+            </li>
           </ul>
         </div>
         <div className={styles.col}>
