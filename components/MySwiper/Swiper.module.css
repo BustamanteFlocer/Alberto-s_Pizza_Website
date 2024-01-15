@@ -106,14 +106,14 @@
   position: absolute;
   top: 2rem;
   right: 2rem;
-  color: white;
+  color: var(--white);
 }
 
 .trandingSlideContent .trandingSlideContentBottom {
   position: absolute;
   bottom: 2rem;
   left: 2rem;
-  color: white;
+  color: var(--white);
 }
 
 .foodRating {

@@ -15,7 +15,7 @@ const Login = () => {
         username,
         password,
       });
-      router.push("/admin");
+      router.push("/dashboard");
     } catch (err) {
       setError(true);
     }

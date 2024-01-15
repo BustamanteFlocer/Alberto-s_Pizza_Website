@@ -1,12 +1,12 @@
 import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
-import styles from "../../styles/Dashboard.module.css";
-import NavAdmin from "../NavAdmin";
+import styles from "../styles/Dashboard.module.css";
+import NavAdmin from "./NavAdmin";
 import AddButton from "@/components/AddButton/AddButton";
 import Add from "@/components/Add/Add";
 
-const Index = ({ products }) => {
+const Dashboard = ({ products }) => {
   const [close, setClose] = useState(true);
   const [pizzaList, setPizzaList] = useState(products);
 
@@ -32,7 +32,6 @@ const Index = ({ products }) => {
               {<AddButton setClose={setClose} />}
               {!close && <Add setClose={setClose} />}
             </div>
-
             <table className={styles.table}>
               <thead>
                 <tr className={styles.trTitle}>
@@ -98,4 +97,4 @@ export const getServerSideProps = async (ctx) => {
   };
 };
 
-export default Index;
+export default Dashboard;
