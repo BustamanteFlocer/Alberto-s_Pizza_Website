@@ -52,19 +52,19 @@ const Footer = () => {
             </li>
 
             <li className={styles.link}>
-              <a href="" className={styles.anchor}>
+              <a href="/Menu" className={styles.anchor}>
                 Menu
               </a>
             </li>
 
             <li className={styles.link}>
-              <a className={styles.anchor} href="">
+              <a className={styles.anchor} href="/about">
                 About
               </a>
             </li>
 
             <li className={styles.link}>
-              <a className={styles.anchor} href="">
+              <a className={styles.anchor} href="/Contact">
                 Contact Us
               </a>
             </li>
