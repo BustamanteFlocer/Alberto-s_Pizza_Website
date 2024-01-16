@@ -1,23 +1,14 @@
 import dbConnect from "@/util/mongo";
 import Order from "@/models/Order";
 
-/*
- * - Handles HTTP requests for retrieving and creating orders.
- * @param {Request} req - The incoming HTTP request.
- * @param {Response} res - The outgoing HTTP response.
- */
 const handler = async (req, res) => {
   const {
     method,
     query: { id },
   } = req;
 
-  /**
-   * Establishes a connection to the MongoDB database
-   */
   await dbConnect();
 
-  // Handles GET requests to retrieve an order by its ID
   if (method === "GET") {
     try {
       const order = await Order.findById(id);
@@ -27,10 +18,8 @@ const handler = async (req, res) => {
     }
   }
 
-  // Handles PUT requests to update an order by its ID
   if (method === "PUT") {
     try {
-      // Return the updated order document
       const order = await Order.findByIdAndUpdate(id, req.body, {
         new: true,
       });
@@ -40,7 +29,6 @@ const handler = async (req, res) => {
     }
   }
 
-  // Handles DELETE requests to delete an order by its ID
   if (method === "DELETE") {
     try {
       await Order.findByIdAndDelete(id);

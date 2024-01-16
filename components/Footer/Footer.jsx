@@ -46,25 +46,25 @@ const Footer = () => {
           </h3>
           <ul className={styles.links}>
             <li className={styles.link}>
-              <a className={styles.anchor} href="/">
+              <a className={styles.anchor} href="">
                 Homepage
               </a>
             </li>
 
             <li className={styles.link}>
-              <a href="/Menu" className={styles.anchor}>
+              <a href="" className={styles.anchor}>
                 Menu
               </a>
             </li>
 
             <li className={styles.link}>
-              <a className={styles.anchor} href="/about">
+              <a className={styles.anchor} href="">
                 About
               </a>
             </li>
 
             <li className={styles.link}>
-              <a className={styles.anchor} href="/Contact">
+              <a className={styles.anchor} href="">
                 Contact Us
               </a>
             </li>

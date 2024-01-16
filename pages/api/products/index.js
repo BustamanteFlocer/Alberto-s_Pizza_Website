@@ -1,19 +1,12 @@
 import dbConnect from "../../../util/mongo";
 import Product from "../../../models/Product";
 
-/**
- * - Handles HTTP requests for retrieving and creating products.
- * @param {Request} req - The incoming HTTP request.
- * @param {Response} res - The outgoing HTTP response.
- */
-
 export default async function handler(req, res) {
   const { method, cookies } = req;
   const token = cookies.token;
 
   await dbConnect();
 
-  // Handles GET requests to retrieve all products
   if (method === "GET") {
     try {
       const products = await Product.find();
@@ -23,7 +16,6 @@ export default async function handler(req, res) {
     }
   }
 
-  // Handles POST requests to create a new product
   if (method === "POST") {
     try {
       const product = await Product.create(req.body);
